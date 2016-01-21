@@ -1,0 +1,77 @@
+{% block html_head_container %}
+
+{% include 'header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+		<div class="off-canvas-wrapper">
+    		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    				<ul class="vertical menu" data-drilldown>
+						{% for item in menu.get_items %}
+							<li class="nav-item {{item.classes | join(' ')}}  {% if item.get_children %} has-submenu {% endif %}">
+								<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+								{% if item.get_children %}
+									<ul class="vertical menu">
+									{% for child in item.get_children %}
+										<li >
+											<a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+										</li>
+									{% endfor %}
+									</ul>
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+    			</div>
+
+				<header class="header" >
+					{% block header %}
+						<div class="top-bar">
+							<div class="top-bar-left">
+								<ul class="dropdown menu hide-for-medium" data-dropdown-menu>
+									<li> <button class="menu-icon" type="button" data-open="offCanvas"></button></li>
+									<li class="menu-text" role="menuitem">{{ site.title }}</li>
+								</ul>
+								<ul class="dropdown menu show-for-medium" data-dropdown-menu>
+									<li class="menu-text" role="menuitem">{{ site.title }}</li>
+									{% for item in menu.get_items %}
+										<li class="nav-item {{item.classes | join(' ')}}  {% if item.get_children %} has-submenu {% endif %}">
+											<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+											{% if item.get_children %}
+												<ul class="submenu menu">
+												{% for child in item.get_children %}
+													<li >
+														<a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+													</li>
+												{% endfor %}
+												</ul>
+											{% endif %}
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					{% endblock %}
+				</header>
+
+				<div id="content" role="main" class="content-wrapper off-canvas-content" data-off-canvas-content>
+					{% block content %}
+						Sorry no content is available
+					{% endblock %}
+				</div>
+
+				{% block footer %}
+					<footer id="footer">
+						{% include 'footer.twig' %}
+					</footer>
+					{{ function('wp_footer') }}
+				{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

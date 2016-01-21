@@ -1,0 +1,10 @@
+{
+  "name": "trunck_wordpress_theme",
+  "dependencies": {
+    "jquery-validation": "~1.14.0",
+    "jquery-cookie": "*",
+    "foundation-sites": "~6.1.1",
+    "motion-ui" : "~1.1.0",
+    "font-awesome": "~4.5.0"
+  }
+}

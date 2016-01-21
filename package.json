@@ -1,0 +1,22 @@
+{
+  "name": "trunck_wordpress_theme",
+  "version": "5.5.2",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "~0.4.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~1.0.0",
+    "node-sass": "^3.4.1",
+    "matchdep": "~0.1.2"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "grunt": "grunt",
+    "watch": "grunt dev"
+  }
+}
