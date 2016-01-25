@@ -7257,7 +7257,7 @@ select[multiple] {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: #fefefe;
+  background: #0a0a0a;
   transition: transform 0.15s linear;
 }
 
@@ -7285,7 +7285,7 @@ select[multiple] {
   width: 0;
   height: 0;
   border: inset 6px;
-  border-color: transparent transparent transparent #2199e8;
+  border-color: transparent transparent transparent #fefefe;
   border-left-style: solid;
   position: absolute;
   top: 50%;
@@ -7300,7 +7300,7 @@ select[multiple] {
   width: 0;
   height: 0;
   border: inset 6px;
-  border-color: transparent #2199e8 transparent transparent;
+  border-color: transparent #fefefe transparent transparent;
   border-right-style: solid;
   float: left;
   margin-right: 0.75rem;
@@ -7803,7 +7803,7 @@ body {
 /* line 158, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/bower_components/foundation-sites/scss/components/_off-canvas.scss */
 .off-canvas {
   position: absolute;
-  background: #e6e6e6;
+  background: #0a0a0a;
   z-index: -1;
   max-height: 100%;
   overflow-y: auto;

@@ -51,6 +51,9 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Custom styles
+// Custom component styles
 @import "components/header";
 @import "components/general";
+
+// Custom page template styles
+@import "templates/page_right_sidebar";

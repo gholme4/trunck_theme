@@ -10,6 +10,7 @@
 		<div class="off-canvas-wrapper">
     		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
+    			<!-- Container more off canvas mobile menu -->
     			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
     				<ul class="vertical menu" data-drilldown>
 						{% for item in menu.get_items %}
@@ -29,6 +30,7 @@
 					</ul>
     			</div>
 
+    			<!-- Header / main menu -->
 				<header class="header" >
 					{% block header %}
 						<div class="top-bar">
@@ -59,12 +61,14 @@
 					{% endblock %}
 				</header>
 
+				<!-- Main content area -->
 				<div id="content" role="main" class="content-wrapper off-canvas-content" data-off-canvas-content>
 					{% block content %}
 						Sorry no content is available
 					{% endblock %}
 				</div>
 
+				<!-- Footer -->
 				{% block footer %}
 					<footer id="footer">
 						{% include 'footer.twig' %}
