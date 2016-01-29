@@ -1,0 +1,372 @@
+a.pseudo-class-active,
+a.pseudo-class-hover {
+  outline: 0;
+}
+
+.column.pseudo-class-last-child:not(:first-child),
+.columns.pseudo-class-last-child:not(:first-child) {
+  float: right;
+}
+
+.column.end.pseudo-class-last-child.pseudo-class-last-child,
+.end.columns.pseudo-class-last-child.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-1 > .column.pseudo-class-last-child,
+.small-up-1 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-2 > .column.pseudo-class-last-child,
+.small-up-2 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-3 > .column.pseudo-class-last-child,
+.small-up-3 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-4 > .column.pseudo-class-last-child,
+.small-up-4 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-5 > .column.pseudo-class-last-child,
+.small-up-5 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-6 > .column.pseudo-class-last-child,
+.small-up-6 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-7 > .column.pseudo-class-last-child,
+.small-up-7 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+.small-up-8 > .column.pseudo-class-last-child,
+.small-up-8 > .columns.pseudo-class-last-child {
+  float: left;
+}
+
+a.pseudo-class-hover,
+a.pseudo-class-focus {
+  color: #1585cf;
+}
+
+.button.pseudo-class-hover,
+.button.pseudo-class-focus {
+  background-color: #1583cc;
+  color: #fff;
+}
+
+.button.primary.pseudo-class-hover,
+.button.primary.pseudo-class-focus {
+  background-color: #147cc0;
+  color: #fff;
+}
+
+.button.secondary.pseudo-class-hover,
+.button.secondary.pseudo-class-focus {
+  background-color: #5f5f5f;
+  color: #fff;
+}
+
+.button.success.pseudo-class-hover,
+.button.success.pseudo-class-focus {
+  background-color: #22bb5b;
+  color: #fff;
+}
+
+.button.alert.pseudo-class-hover,
+.button.alert.pseudo-class-focus {
+  background-color: #da3116;
+  color: #fff;
+}
+
+.button.warning.pseudo-class-hover,
+.button.warning.pseudo-class-focus {
+  background-color: #cc8b00;
+  color: #fff;
+}
+
+.button.hollow.pseudo-class-hover,
+.button.hollow.pseudo-class-focus {
+  background-color: transparent;
+}
+
+.button.hollow.pseudo-class-hover,
+.button.hollow.pseudo-class-focus {
+  border-color: #0c4d78;
+  color: #0c4d78;
+}
+
+.button.hollow.primary.pseudo-class-hover,
+.button.hollow.primary.pseudo-class-focus {
+  border-color: #0c4d78;
+  color: #0c4d78;
+}
+
+.button.hollow.secondary.pseudo-class-hover,
+.button.hollow.secondary.pseudo-class-focus {
+  border-color: #3c3c3c;
+  color: #3c3c3c;
+}
+
+.button.hollow.success.pseudo-class-hover,
+.button.hollow.success.pseudo-class-focus {
+  border-color: #157539;
+  color: #157539;
+}
+
+.button.hollow.alert.pseudo-class-hover,
+.button.hollow.alert.pseudo-class-focus {
+  border-color: #881f0e;
+  color: #881f0e;
+}
+
+.button.hollow.warning.pseudo-class-hover,
+.button.hollow.warning.pseudo-class-focus {
+  border-color: #805700;
+  color: #805700;
+}
+
+[type='text'].pseudo-class-focus,
+[type='password'].pseudo-class-focus,
+[type='date'].pseudo-class-focus,
+[type='datetime'].pseudo-class-focus,
+[type='datetime-local'].pseudo-class-focus,
+[type='month'].pseudo-class-focus,
+[type='week'].pseudo-class-focus,
+[type='email'].pseudo-class-focus,
+[type='number'].pseudo-class-focus,
+[type='search'].pseudo-class-focus,
+[type='tel'].pseudo-class-focus,
+[type='time'].pseudo-class-focus,
+[type='url'].pseudo-class-focus,
+[type='color'].pseudo-class-focus,
+textarea.pseudo-class-focus {
+  border: 1px solid #8a8a8a;
+  background-color: #fefefe;
+  outline: none;
+  box-shadow: 0 0 5px #cacaca;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+
+input.pseudo-class-disabled,
+textarea.pseudo-class-disabled {
+  background-color: #e6e6e6;
+  cursor: default;
+}
+
+.input-group > .pseudo-class-first-child {
+  border-radius: 0 0 0 0;
+}
+
+.input-group > .pseudo-class-last-child > * {
+  border-radius: 0 0 0 0;
+}
+
+.input-group-label.pseudo-class-first-child {
+  border-right: 0;
+}
+
+.input-group-label.pseudo-class-last-child {
+  border-left: 0;
+}
+
+select.pseudo-class-disabled {
+  background-color: #e6e6e6;
+  cursor: default;
+}
+
+.show-on-focus.pseudo-class-active,
+.show-on-focus.pseudo-class-focus {
+  position: static !important;
+  height: auto;
+  width: auto;
+  overflow: visible;
+  clip: auto;
+}
+
+.accordion-title.pseudo-class-hover,
+.accordion-title.pseudo-class-focus {
+  background-color: #e6e6e6;
+}
+
+.pseudo-class-last-child > .accordion-title {
+  border-bottom-width: 0;
+}
+
+.breadcrumbs a.pseudo-class-hover {
+  text-decoration: underline;
+}
+
+.button-group.primary .button.pseudo-class-hover,
+.button-group.primary .button.pseudo-class-focus {
+  background-color: #147cc0;
+  color: #fff;
+}
+
+.button-group.secondary .button.pseudo-class-hover,
+.button-group.secondary .button.pseudo-class-focus {
+  background-color: #5f5f5f;
+  color: #fff;
+}
+
+.button-group.success .button.pseudo-class-hover,
+.button-group.success .button.pseudo-class-focus {
+  background-color: #22bb5b;
+  color: #fff;
+}
+
+.button-group.alert .button.pseudo-class-hover,
+.button-group.alert .button.pseudo-class-focus {
+  background-color: #da3116;
+  color: #fff;
+}
+
+.button-group.warning .button.pseudo-class-hover,
+.button-group.warning .button.pseudo-class-focus {
+  background-color: #cc8b00;
+  color: #fff;
+}
+
+.callout > .pseudo-class-first-child {
+  margin-top: 0;
+}
+
+.callout > .pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+.close-button.pseudo-class-hover,
+.close-button.pseudo-class-focus {
+  color: #0a0a0a;
+}
+
+.dropdown.menu .submenu:not(.js-dropdown-nohover) > .is-dropdown-submenu-parent.pseudo-class-hover > .dropdown.menu .submenu {
+  display: block;
+}
+
+.media-object-section.pseudo-class-first-child {
+  padding-right: 1rem;
+}
+
+.media-object-section.pseudo-class-last-child:not( + .media-object-section:first-child) {
+  padding-left: 1rem;
+}
+
+.menu.expanded > li.pseudo-class-first-child.pseudo-class-last-child {
+  width: 100%;
+}
+
+.orbit-previous.pseudo-class-hover,
+.orbit-next.pseudo-class-hover,
+.orbit-previous.pseudo-class-active,
+.orbit-next.pseudo-class-active,
+.orbit-previous.pseudo-class-focus,
+.orbit-next.pseudo-class-focus {
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+.orbit-bullets button.pseudo-class-hover {
+  background-color: #8a8a8a;
+}
+
+.pagination li.pseudo-class-last-child,
+.pagination li.pseudo-class-first-child {
+  display: inline-block;
+}
+
+.pagination a.pseudo-class-hover,
+.pagination button.pseudo-class-hover {
+  background: #e6e6e6;
+}
+
+.pagination .disabled.pseudo-class-hover {
+  background: transparent;
+}
+
+.slider-handle.pseudo-class-hover {
+  background-color: #1583cc;
+}
+
+.reveal > .pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+input.pseudo-class-checked ~ .switch-paddle {
+  background: #2199e8;
+}
+
+input.pseudo-class-checked ~ .switch-paddle::after {
+  left: 2.25rem;
+}
+
+[data-whatinput='mouse'] input.pseudo-class-focus ~ .switch-paddle {
+  outline: 0;
+}
+
+input.pseudo-class-checked + label > .switch-active {
+  display: block;
+}
+
+input.pseudo-class-checked + label > .switch-inactive {
+  display: none;
+}
+
+.switch.tiny input.pseudo-class-checked ~ .switch-paddle:after {
+  left: 1.75rem;
+}
+
+.switch.small input.pseudo-class-checked ~ .switch-paddle:after {
+  left: 2rem;
+}
+
+.switch.large input.pseudo-class-checked ~ .switch-paddle:after {
+  left: 2.75rem;
+}
+
+table.hover tr.pseudo-class-hover {
+  background-color: #f9f9f9;
+}
+
+table.hover tr:nth-of-type(even).pseudo-class-hover {
+  background-color: #ececec;
+}
+
+.tabs.simple > li > a.pseudo-class-hover {
+  background: transparent;
+}
+
+.tabs.primary > li > a.pseudo-class-hover,
+.tabs.primary > li > a.pseudo-class-focus {
+  background: #1893e4;
+}
+
+.tabs-title > a.pseudo-class-hover {
+  background: #fefefe;
+}
+
+.tabs-title > a.pseudo-class-focus {
+  background: #e6e6e6;
+}
+
+.thumbnail.pseudo-class-hover,
+.thumbnail.pseudo-class-focus {
+  box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5);
+}
+
+.menu-icon.pseudo-class-hover::after {
+  background: #cacaca;
+  box-shadow: 0 7px 0 #cacaca, 0 14px 0 #cacaca;
+}
+
+.top-bar .submenu li.pseudo-class-hover {
+  background-color: #3d3d3d;
+}

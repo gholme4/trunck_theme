@@ -1,9 +1,11 @@
 module.exports = function(grunt) {
 	require('matchdep').filterDev('grunt-*').forEach( grunt.loadNpmTasks );
+	var gulp = require('gulp'),
+	styleguide = require('sc5-styleguide');
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-
+		
 		sass: {
 			options: {
 				sourceMap: false
@@ -48,6 +50,7 @@ module.exports = function(grunt) {
 			}
 
 		},
+		
 
 		concat: {
 			options: {
@@ -103,13 +106,13 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-
+		
 		watch: {
 			grunt: { files: ['Gruntfile.js'] },
 
 			sass: {
 				files: 'scss/**/*.scss',
-				tasks: ['copy', 'sass'],
+				tasks: ['copy', 'sass', 'shell:styleguide'],
 				options: {
 					livereload:true,
 				}
@@ -123,10 +126,23 @@ module.exports = function(grunt) {
 				}
 			}
 
-		}
+		},
+		shell: {
+            styleguide: {
+                options: {
+                    execOptions: {
+                        cwd: './'
+                    }
+                },
+                // command for generating styleguide
+                // flags for configuration are available here:
+                // https://github.com/kss-node/kss-node#using-the-command-line-tool
+                command: 'kss-node --placeholder "[modifier class]" --source ./scss --destination ./styleguide --css ./../css/screen.css --js ./../js/script.js --title "Trunck Styleguide" --homepage "./../kss-node-template/homepage.md" --verbose'
+            }
+        }
 	});
-
-	grunt.registerTask('build', ['copy', 'sass', 'concat', 'uglify']);
+	
+	grunt.registerTask('build', ['copy', 'sass', 'concat', 'shell:styleguide', 'uglify']);
 	grunt.registerTask('default', ['build']);
 	grunt.registerTask('dev', ['build', 'watch']);
 };

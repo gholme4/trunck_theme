@@ -9607,67 +9607,12 @@ table.hover tr:nth-of-type(even):hover {
   height: 100%;
 }
 
-/* line 3, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-primary {
-  background: #2199e8;
-}
-
-/* line 4, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-secondary {
-  background: #777;
-}
-
-/* line 5, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-success {
-  background: #3adb76;
-}
-
-/* line 6, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-warning {
-  background: #ffae00;
-}
-
-/* line 7, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-alert {
-  background: #ec5840;
-}
-
-/* line 8, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-white {
-  background: #fefefe;
-}
-
-/* line 9, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-light-gray {
-  background: #e6e6e6;
-}
-
-/* line 10, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-medium-gray {
-  background: #cacaca;
-}
-
-/* line 11, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-dark-gray {
-  background: #8a8a8a;
-}
-
-/* line 12, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.bg-black {
-  background: #0a0a0a;
-}
-
-/* line 15, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.swatch {
-  padding: 30px;
-}
-
-/* line 18, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
+/* line 1, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
 .content-wrapper {
   padding-top: 30px;
 }
 
-/* line 22, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
+/* line 5, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
 h1.page-title {
   margin-bottom: 30px;
 }

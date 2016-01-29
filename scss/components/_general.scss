@@ -1,3 +1,20 @@
+.bg {
+
+	&-primary     { background: $primary-color; }
+	&-secondary   { background: $secondary-color; }
+	&-success     { background: $success-color; }
+	&-warning     { background: $warning-color; }
+	&-alert       { background: $alert-color; }
+	&-white       { background: $white; }
+	&-light-gray  { background: $light-gray; }
+	&-medium-gray { background: $medium-gray; }
+	&-dark-gray   { background: $dark-gray; }
+	&-black       { background: $black; }
+}
+
+.swatch {
+	padding: 30px;
+}
 .content-wrapper {
 	padding-top: 30px;
 }

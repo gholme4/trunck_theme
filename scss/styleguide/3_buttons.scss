@@ -1,0 +1,47 @@
+// Buttons
+//
+// Button styles can be applied to anything with the `.button` class applied.
+// However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
+//
+// Styleguide 3
+
+// Base styles & states
+//
+// :hover - Hover state.
+// :active - Active state.
+// .disabled - Disabled button..
+//
+// Markup:
+// <button type="submit" class="button primary {{modifier_class}}">Button</button>
+//
+// Styleguide 3.1
+
+// Sizes
+//
+// Add `.tiny`, `.small`, or `.medium`, `.large`, `.expanded`  for additional sizes. 
+//
+// .tiny  - Tiny button.
+// .small - Small button.
+// .medium   - Medium button.
+// .large   - Large button.
+// .expanded   - Block level button.
+// .expanded.small  - Small block level button. Classes can be combined.
+//
+// Markup:
+// <button type="submit" class="button primary {{modifier_class}}">Button</button>
+//
+// Styleguide 3.2
+
+// Colors
+//
+// Add `.secondary`, `.success`, `.alert`, or `.warning` for additional colors. 
+//
+// .secondary  - Secondary color button.
+// .success - Success color button.
+// .alert   - Alert color button.
+// .warning   - Warning color button.
+//
+// Markup:
+// <button type="submit" class="button {{modifier_class}}">Button</button>
+//
+// Styleguide 3.3
