@@ -33,14 +33,15 @@ if  (trunck_check_theme_setup())
             $context['site'] = $this;
             $context['sidebar_widget'] = Timber::get_widgets('sidebar-widget-area');
             $context['footer_widget'] = Timber::get_widgets('footer-widget-area');
+            $context['options'] = get_fields('options');
             return $context;
         }
 
         function add_to_twig( $twig ) {
             /* this is where you can add your own fuctions to twig */
             $twig->addExtension( new Twig_Extension_StringLoader() );
-            $twig->addFilter( 'trunck_pagination', new Twig_Filter_Function( 'trunck_pagination' ) );
-            $twig->addFilter( 'trunck_nav', new Twig_Filter_Function( 'trunck_nav' ) );
+            $twig->addFilter( new Twig_SimpleFilter( 'esc_attr', 'trunck_esc_attr' ) );
+            $twig->addFilter( new Twig_SimpleFilter( 'intl', 'trunck_internationalization' ) );
             return $twig;
         }
 
@@ -52,6 +53,16 @@ else
 {
      switch_theme( get_option('theme_switched') );
      return;
+}
+
+function trunck_esc_attr ($text) {
+
+    return esc_attr($text);
+}
+
+function trunck_internationalization ($text) {
+
+    return __($text, "trunck");
 }
 
 // Check for theme requirements
