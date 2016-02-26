@@ -1,140 +1,369 @@
 <!DOCTYPE html>
-<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
-<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Trunck Styleguide</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trunck Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="./../css/screen.css">
 
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="./../css/screen.css">
-
-</head>
-<body id="kss-node">
-
-<div class="kss-sidebar kss-style">
-  <header class="kss-header">
-    <h1 class="kss-doc-title">Trunck Styleguide</h1>
-  </header>
-  <nav class="kss-nav">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
-        <a href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Overview</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-1.html">
-          <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Colors</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-2.html">
-          <span class="kss-nav__ref">2</span
-          ><span class="kss-nav__name">Typography</span>
-        </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-2.html#kssref-2-1">
-                <span class="kss-nav__ref ">2.1</span
-                ><span class="kss-nav__name">Headings</span>
-              </a>
-            </li>
-        </ul>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-3.html">
-          <span class="kss-nav__ref">3</span
-          ><span class="kss-nav__name">Buttons</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
-<article role="main" class="kss-main">
-
-      <div     id="kssref-2" class="kss-section kss-section--depth-1">
-
-    <div class="kss-style">
-      <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-2">
-          <span class="kss-title__ref">
-              2
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Typography
-        </a>
-      </h1>
-
-
-    </div>
-
-
-      </div>
-      <section id="kssref-2-1" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-2-1">
-          <span class="kss-title__ref">
-              2.1
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Headings
-        </a>
-      </h2>
-
-
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <h1>h1. This is a very large header.</h1>
-<h2>h2. This is a large header.</h2>
-<h3>h3. This is a medium header.</h3>
-<h4>h4. This is a moderate header.</h4>
-<h5>h5. This is a small header.</h5>
-<h6>h6. This is a tiny header.</h6>
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="2">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Buttons</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-2.1"><span class="kss-ref">2.1</span><span class="kss-name">Headers</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.2"><span class="kss-ref">2.2</span><span class="kss-name">Small Header Segments</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.3"><span class="kss-ref">2.3</span><span class="kss-name">Paragraphs</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.4"><span class="kss-ref">2.4</span><span class="kss-name">Unordered Lists</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.5"><span class="kss-ref">2.5</span><span class="kss-name">Ordered Lists</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.6"><span class="kss-ref">2.6</span><span class="kss-name">Definition Lists</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.7"><span class="kss-ref">2.7</span><span class="kss-name">Blockquotes</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.8"><span class="kss-ref">2.8</span><span class="kss-name">Abbreviations</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.9"><span class="kss-ref">2.9</span><span class="kss-name">Code</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.10"><span class="kss-ref">2.10</span><span class="kss-name">Keystrokes</span></a></li>
+            </ul>
+          </nav>
         </div>
       </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-2" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">2</span> Typography</h1>
+          </section>
+          <section id="section-2.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.1</span> Headers</h1>
+            <div class="kss-description">
+              <p>Lighten up your headers by adding a class of <code>.subheader</code> to any header element.</p>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;h1. This is a very large header.&lt;/h1&gt;
-&lt;h2&gt;h2. This is a large header.&lt;/h2&gt;
-&lt;h3&gt;h3. This is a medium header.&lt;/h3&gt;
-&lt;h4&gt;h4. This is a moderate header.&lt;/h4&gt;
-&lt;h5&gt;h5. This is a small header.&lt;/h5&gt;
-&lt;h6&gt;h6. This is a tiny header.&lt;/h6&gt;</code></pre>
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <h1 class="[modifier class]">h1. This is a very large header.</h1>
+<h2 class="[modifier class]">h2. This is a large header.</h2>
+<h3 class="[modifier class]">h3. This is a medium header.</h3>
+<h4 class="[modifier class]">h4. This is a moderate header.</h4>
+<h5 class="[modifier class]">h5. This is a small header.</h5>
+<h6 class="[modifier class]">h6. This is a tiny header.</h6>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.subheader</div>
+                  <div class="kss-modifier-description">
+                    Subheader paragraph.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <h1 class="subheader">h1. This is a very large header.</h1>
+<h2 class="subheader">h2. This is a large header.</h2>
+<h3 class="subheader">h3. This is a medium header.</h3>
+<h4 class="subheader">h4. This is a moderate header.</h4>
+<h5 class="subheader">h5. This is a small header.</h5>
+<h6 class="subheader">h6. This is a tiny header.</h6>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;h1 class=&quot;[modifier class]&quot;&gt;h1. This is a very large header.&lt;/h1&gt;
+&lt;h2 class=&quot;[modifier class]&quot;&gt;h2. This is a large header.&lt;/h2&gt;
+&lt;h3 class=&quot;[modifier class]&quot;&gt;h3. This is a medium header.&lt;/h3&gt;
+&lt;h4 class=&quot;[modifier class]&quot;&gt;h4. This is a moderate header.&lt;/h4&gt;
+&lt;h5 class=&quot;[modifier class]&quot;&gt;h5. This is a small header.&lt;/h5&gt;
+&lt;h6 class=&quot;[modifier class]&quot;&gt;h6. This is a tiny header.&lt;/h6&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.2</span> Small Header Segments</h1>
+            <div class="kss-description">
+              <p>By inserting a <code>&lt;small&gt;</code> element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <h1>h1. This is a very large <small>header</small>.</h1>
+<h2>h2. This is a large <small>header</small>.</h2>
+<h3>h3. This is a medium <small>header</small>.</h3>
+<h4>h4. This is a moderate <small>header</small>.</h4>
+<h5>h5. This is a small <small>header</small>.</h5>
+<h6>h6. This is a tiny <small>header</small>.</h6>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;h1&gt;h1. This is a very large &lt;small&gt;header&lt;/small&gt;.&lt;/h1&gt;
+&lt;h2&gt;h2. This is a large &lt;small&gt;header&lt;/small&gt;.&lt;/h2&gt;
+&lt;h3&gt;h3. This is a medium &lt;small&gt;header&lt;/small&gt;.&lt;/h3&gt;
+&lt;h4&gt;h4. This is a moderate &lt;small&gt;header&lt;/small&gt;.&lt;/h4&gt;
+&lt;h5&gt;h5. This is a small &lt;small&gt;header&lt;/small&gt;.&lt;/h5&gt;
+&lt;h6&gt;h6. This is a tiny &lt;small&gt;header&lt;/small&gt;.&lt;/h6&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.3</span> Paragraphs</h1>
+            <div class="kss-description">
+              <p>You can change the text alignment of an element by adding <code>.text-left</code>, <code>.text-right</code>, <code>.text-center</code> or <code>.text-justify</code> to an element.
+Add <code>.lead</code> for a slightly-larger-than-normal block of text, useful for decks, blurbs, or other descriptive text.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p class="[modifier class]">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.text-left</div>
+                  <div class="kss-modifier-description">
+                    Left align.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <p class="text-left">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.text-right</div>
+                  <div class="kss-modifier-description">
+                    Right align.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <p class="text-right">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.text-center</div>
+                  <div class="kss-modifier-description">
+                    Center align.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <p class="text-center">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.text-justify</div>
+                  <div class="kss-modifier-description">
+                    Justify text.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <p class="text-justify">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.lead</div>
+                  <div class="kss-modifier-description">
+                    Lead paragraph.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <p class="lead">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p class=&quot;[modifier class]&quot;&gt;Links are very standard, and the color is preset to the Foundation primary color. &lt;a href=&quot;#&quot;&gt;Click me&lt;/a&gt;.&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.4</span> Unordered Lists</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul>
+<li>List item with a much longer description or more content.</li>
+<li>List item</li>
+<li>List item
+<ul>
+<li>Nested list item</li>
+<li>Nested list item</li>
+<li>Nested list item</li>
+</ul>
+</li>
+<li>List item</li>
+<li>List item</li>
+<li>List item</li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul&gt;
+&lt;li&gt;List item with a much longer description or more content.&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;List item
+&lt;ul&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.5" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.5</span> Ordered Lists</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ol>
+<li>List item with a much longer description or more content.</li>
+<li>List item</li>
+<li>List item
+<ol>
+<li>Nested list item</li>
+<li>Nested list item</li>
+<li>Nested list item</li>
+</ol>
+</li>
+<li>List item</li>
+<li>List item</li>
+<li>List item</li>
+</ol>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ol&gt;
+&lt;li&gt;List item with a much longer description or more content.&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;List item
+&lt;ol&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;li&gt;Nested list item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.6" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.6</span> Definition Lists</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <dl>
+<dt>Time</dt>
+<dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
+<dt>Space</dt>
+<dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+<dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+</dl>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;dl&gt;
+&lt;dt&gt;Time&lt;/dt&gt;
+&lt;dd&gt;The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.&lt;/dd&gt;
+&lt;dt&gt;Space&lt;/dt&gt;
+&lt;dd&gt;A continuous area or expanse that is free, available, or unoccupied.&lt;/dd&gt;
+&lt;dd&gt;The dimensions of height, depth, and width within which all things exist and move.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.7" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.7</span> Blockquotes</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <blockquote>
+Those people who think they know everything are a great annoyance to those of us who do.
+<cite>Isaac Asimov</cite>
+</blockquote>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;blockquote&gt;
+Those people who think they know everything are a great annoyance to those of us who do.
+&lt;cite&gt;Isaac Asimov&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.8" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.8</span> Abbreviations</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p>In my dream last night, I saw <abbr title="John Ronald Reuel">J. R. R.</abbr> Tolkien and George <abbr title="Raymond Richard">R. R.</abbr> Martin hanging out on Sunset <abbr title="Boulevard">Blvd</abbr>.</p>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;In my dream last night, I saw &lt;abbr title=&quot;John Ronald Reuel&quot;&gt;J. R. R.&lt;/abbr&gt; Tolkien and George &lt;abbr title=&quot;Raymond Richard&quot;&gt;R. R.&lt;/abbr&gt; Martin hanging out on Sunset &lt;abbr title=&quot;Boulevard&quot;&gt;Blvd&lt;/abbr&gt;.&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.9" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.9</span> Code</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  Remember to escape angle brackets when printing HTML: <code>&lt;div&gt;</code>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">Remember to escape angle brackets when printing HTML: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-2.10" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.10</span> Keystrokes</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p>Press <kbd>Cmd+Q</kbd> (or <kbd>Ctrl+Q</kbd> on Windows) to play Half-Life 3.</p>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;Press &lt;kbd&gt;Cmd+Q&lt;/kbd&gt; (or &lt;kbd&gt;Ctrl+Q&lt;/kbd&gt; on Windows) to play Half-Life 3.&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
       </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    <script src="./../js/script.js"></script>
 
-      </section>
-</article>
-
-<!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
-<script>
-  prettyPrint();
-</script>
-<script src="./../js/script.js"></script>
-
-
-
-<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
-</body>
+  </body>
 </html>

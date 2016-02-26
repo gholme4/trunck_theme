@@ -5,15 +5,133 @@
 //
 // Styleguide 2
 
-// Headings
+// Headers
 //
+// Lighten up your headers by adding a class of `.subheader` to any header element.
+//
+// .subheader  - Subheader paragraph.
 //
 // Markup:
-// <h1>h1. This is a very large header.</h1>
-// <h2>h2. This is a large header.</h2>
-// <h3>h3. This is a medium header.</h3>
-// <h4>h4. This is a moderate header.</h4>
-// <h5>h5. This is a small header.</h5>
-// <h6>h6. This is a tiny header.</h6>
+// <h1 class="{{modifier_class}}">h1. This is a very large header.</h1>
+// <h2 class="{{modifier_class}}">h2. This is a large header.</h2>
+// <h3 class="{{modifier_class}}">h3. This is a medium header.</h3>
+// <h4 class="{{modifier_class}}">h4. This is a moderate header.</h4>
+// <h5 class="{{modifier_class}}">h5. This is a small header.</h5>
+// <h6 class="{{modifier_class}}">h6. This is a tiny header.</h6>
 //
 // Styleguide 2.1
+
+// Small Header Segments
+//
+// By inserting a `<small>` element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text.
+//
+// Markup:
+// <h1>h1. This is a very large <small>header</small>.</h1>
+// <h2>h2. This is a large <small>header</small>.</h2>
+// <h3>h3. This is a medium <small>header</small>.</h3>
+// <h4>h4. This is a moderate <small>header</small>.</h4>
+// <h5>h5. This is a small <small>header</small>.</h5>
+// <h6>h6. This is a tiny <small>header</small>.</h6>
+//
+// Styleguide 2.2
+
+// Paragraphs
+//
+// You can change the text alignment of an element by adding `.text-left`, `.text-right`, `.text-center` or `.text-justify` to an element.
+// Add `.lead` for a slightly-larger-than-normal block of text, useful for decks, blurbs, or other descriptive text.
+//
+// .text-left  - Left align.
+// .text-right - Right align.
+// .text-center - Center align.
+// .text-justify - Justify text.
+// .lead  - Lead paragraph.
+//
+// Markup:
+//<p class="{{modifier_class}}">Links are very standard, and the color is preset to the Foundation primary color. <a href="#">Click me</a>.</p>
+//
+// Styleguide 2.3
+
+
+// Unordered Lists
+//
+// Markup:
+//<ul>
+//<li>List item with a much longer description or more content.</li>
+//<li>List item</li>
+//<li>List item
+//<ul>
+//<li>Nested list item</li>
+//<li>Nested list item</li>
+//<li>Nested list item</li>
+//</ul>
+//</li>
+//<li>List item</li>
+//<li>List item</li>
+//<li>List item</li>
+//</ul>
+//
+// Styleguide 2.4
+
+// Ordered Lists
+//
+// Markup:
+//<ol>
+//<li>List item with a much longer description or more content.</li>
+//<li>List item</li>
+//<li>List item
+//<ol>
+//<li>Nested list item</li>
+//<li>Nested list item</li>
+//<li>Nested list item</li>
+//</ol>
+//</li>
+//<li>List item</li>
+//<li>List item</li>
+//<li>List item</li>
+//</ol>
+//
+// Styleguide 2.5
+
+// Definition Lists
+//
+// Markup:
+//<dl>
+//<dt>Time</dt>
+//<dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
+//<dt>Space</dt>
+//<dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+//<dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+//</dl>
+//
+// Styleguide 2.6
+
+// Blockquotes
+//
+// Markup:
+//<blockquote>
+//Those people who think they know everything are a great annoyance to those of us who do.
+//<cite>Isaac Asimov</cite>
+//</blockquote>
+//
+// Styleguide 2.7
+
+// Abbreviations
+//
+// Markup:
+//<p>In my dream last night, I saw <abbr title="John Ronald Reuel">J. R. R.</abbr> Tolkien and George <abbr title="Raymond Richard">R. R.</abbr> Martin hanging out on Sunset <abbr title="Boulevard">Blvd</abbr>.</p>
+//
+// Styleguide 2.8
+
+// Code
+//
+// Markup:
+//Remember to escape angle brackets when printing HTML: <code>&lt;div&gt;</code>
+//
+// Styleguide 2.9
+
+// Keystrokes
+//
+// Markup:
+//<p>Press <kbd>Cmd+Q</kbd> (or <kbd>Ctrl+Q</kbd> on Windows) to play Half-Life 3.</p>
+//
+// Styleguide 2.10

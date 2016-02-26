@@ -1,345 +1,388 @@
 <!DOCTYPE html>
-<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
-<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Trunck Styleguide</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trunck Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="./../css/screen.css">
 
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="./../css/screen.css">
-
-</head>
-<body id="kss-node">
-
-<div class="kss-sidebar kss-style">
-  <header class="kss-header">
-    <h1 class="kss-doc-title">Trunck Styleguide</h1>
-  </header>
-  <nav class="kss-nav">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
-        <a href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Overview</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-1.html">
-          <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Colors</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-2.html">
-          <span class="kss-nav__ref">2</span
-          ><span class="kss-nav__name">Typography</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-3.html">
-          <span class="kss-nav__ref">3</span
-          ><span class="kss-nav__name">Buttons</span>
-        </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-1">
-                <span class="kss-nav__ref ">3.1</span
-                ><span class="kss-nav__name">Base styles &amp; states</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-2">
-                <span class="kss-nav__ref ">3.2</span
-                ><span class="kss-nav__name">Sizes</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-3">
-                <span class="kss-nav__ref ">3.3</span
-                ><span class="kss-nav__name">Colors</span>
-              </a>
-            </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</div>
-<article role="main" class="kss-main">
-
-      <div     id="kssref-3" class="kss-section kss-section--depth-1">
-
-    <div class="kss-style">
-      <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-3">
-          <span class="kss-title__ref">
-              3
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Buttons
-        </a>
-      </h1>
-
-
-      <div class="kss-description">
-        <p>Button styles can be applied to anything with the <code>.button</code> class applied.
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="3">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Buttons</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Base styles &amp; states</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span class="kss-name">Sizes</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.4"><span class="kss-ref">3.4</span><span class="kss-name">Hollow Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.5"><span class="kss-ref">3.5</span><span class="kss-name">Dropdown Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.6"><span class="kss-ref">3.6</span><span class="kss-name">Button Group</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.7"><span class="kss-ref">3.7</span><span class="kss-name">Split Button</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-3" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">3</span> Buttons</h1>
+            <div class="kss-description">
+              <p>Button styles can be applied to anything with the <code>.button</code> class applied.
 However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
 
+            </div>
+          </section>
+          <section id="section-3.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.1</span> Base styles &amp; states</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary [modifier class]">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">:hover</div>
+                  <div class="kss-modifier-description">
+                    Hover state.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary pseudo-class-hover">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">:active</div>
+                  <div class="kss-modifier-description">
+                    Active state.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary pseudo-class-active">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.disabled</div>
+                  <div class="kss-modifier-description">
+                    Disabled button..
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary disabled">Button</button>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;button type=&quot;submit&quot; class=&quot;button primary [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.2</span> Sizes</h1>
+            <div class="kss-description">
+              <p>Add <code>.tiny</code>, <code>.small</code>, or <code>.medium</code>, <code>.large</code>, <code>.expanded</code>  for additional sizes.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary [modifier class]">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.tiny</div>
+                  <div class="kss-modifier-description">
+                    Tiny button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary tiny">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.small</div>
+                  <div class="kss-modifier-description">
+                    Small button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary small">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.medium</div>
+                  <div class="kss-modifier-description">
+                    Medium button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary medium">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.large</div>
+                  <div class="kss-modifier-description">
+                    Large button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary large">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.expanded</div>
+                  <div class="kss-modifier-description">
+                    Block level button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary expanded">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.expanded.small</div>
+                  <div class="kss-modifier-description">
+                    Small block level button. Classes can be combined.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button primary expanded small">Button</button>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;button type=&quot;submit&quot; class=&quot;button primary [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.3</span> Colors</h1>
+            <div class="kss-description">
+              <p>Add <code>.secondary</code>, <code>.success</code>, <code>.alert</code>, or <code>.warning</code> for additional colors.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button [modifier class]">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.secondary</div>
+                  <div class="kss-modifier-description">
+                    Secondary color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button secondary">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.success</div>
+                  <div class="kss-modifier-description">
+                    Success color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button success">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.alert</div>
+                  <div class="kss-modifier-description">
+                    Alert color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button alert">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.warning</div>
+                  <div class="kss-modifier-description">
+                    Warning color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button warning">Button</button>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;button type=&quot;submit&quot; class=&quot;button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.4</span> Hollow Buttons</h1>
+            <div class="kss-description">
+              <p>Add <code>.hollow</code>.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button hollow [modifier class]">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.secondary</div>
+                  <div class="kss-modifier-description">
+                    Secondary color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button hollow secondary">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.success</div>
+                  <div class="kss-modifier-description">
+                    Success color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button hollow success">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.alert</div>
+                  <div class="kss-modifier-description">
+                    Alert color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button hollow alert">Button</button>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.warning</div>
+                  <div class="kss-modifier-description">
+                    Warning color button.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <button type="submit" class="button hollow warning">Button</button>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;button type=&quot;submit&quot; class=&quot;button hollow [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.5" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.5</span> Dropdown Buttons</h1>
+            <div class="kss-description">
+              <p>Add a dropdown arrow to your button with the <code>.dropdown</code> class.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <button class="button dropdown">Button</button>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;button class=&quot;button dropdown&quot;&gt;Button&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.6" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.6</span> Button Group</h1>
+            <div class="kss-description">
+              <p>Add the <code>.button-group</code> class to a container, and inside it place any number of buttons. The buttons are separated by a small border.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="button-group">
+<a class="button">One</a>
+<a class="button">Two</a>
+<a class="button">Three</a>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;div class=&quot;button-group&quot;&gt;
+&lt;a class=&quot;button&quot;&gt;One&lt;/a&gt;
+&lt;a class=&quot;button&quot;&gt;Two&lt;/a&gt;
+&lt;a class=&quot;button&quot;&gt;Three&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.7" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.7</span> Split Button</h1>
+            <div class="kss-description">
+              <p>To build a split button, just create a button group with two buttons.
+To create a button with only an arrow, add the class <code>.arrow-only</code>. Note that the button still needs a label for screen readers, which can be embedded inside the button with a <code>.show-for-sr</code> element. In the example below, an assistive device will read the arrow button as &quot;Show menu&quot;.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="button-group">
+<a class="button">Primary Action</a>
+<a class="dropdown button arrow-only">
+<span class="show-for-sr">Show menu</span>
+</a>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;div class=&quot;button-group&quot;&gt;
+&lt;a class=&quot;button&quot;&gt;Primary Action&lt;/a&gt;
+&lt;a class=&quot;dropdown button arrow-only&quot;&gt;
+&lt;span class=&quot;show-for-sr&quot;&gt;Show menu&lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
       </div>
     </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    <script src="./../js/script.js"></script>
 
-
-      </div>
-      <section id="kssref-3-1" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-1">
-          <span class="kss-title__ref">
-              3.1
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Base styles &amp; states
-        </a>
-      </h2>
-
-
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary [modifier class]">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          :hover
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Hover state.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary pseudo-class-hover">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          :active
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Active state.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary pseudo-class-active">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .disabled
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Disabled button..
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary disabled">Button</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button type=&quot;submit&quot; class=&quot;button primary [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-3-2" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-2">
-          <span class="kss-title__ref">
-              3.2
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Sizes
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Add <code>.tiny</code>, <code>.small</code>, or <code>.medium</code>, <code>.large</code>, <code>.expanded</code>  for additional sizes.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary [modifier class]">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .tiny
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Tiny button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary tiny">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .small
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Small button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary small">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .medium
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Medium button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary medium">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .large
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Large button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary large">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .expanded
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Block level button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary expanded">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .expanded.small
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Small block level button. Classes can be combined.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button primary expanded small">Button</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button type=&quot;submit&quot; class=&quot;button primary [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-3-3" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-3">
-          <span class="kss-title__ref">
-              3.3
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Colors
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Add <code>.secondary</code>, <code>.success</code>, <code>.alert</code>, or <code>.warning</code> for additional colors.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button [modifier class]">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .secondary
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Secondary color button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button secondary">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .success
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Success color button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button success">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .alert
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Alert color button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button alert">Button</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .warning
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Warning color button.
-        </div>
-        <div class="kss-modifier__example">
-          <button type="submit" class="button warning">Button</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button type=&quot;submit&quot; class=&quot;button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-</article>
-
-<!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
-<script>
-  prettyPrint();
-</script>
-<script src="./../js/script.js"></script>
-
-
-
-<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
-</body>
+  </body>
 </html>
