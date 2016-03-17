@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trunck Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="./../css/screen.css">
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="10">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Forms</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Menus</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Breadcrumbs</span></a></li>
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Accordion</span></a></li>
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">Callout</span></a></li>
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Reveal</span></a></li>
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">Table</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-10.1"><span class="kss-ref">10.1</span><span class="kss-name">Basics</span></a></li>
+              <li class="kss-menu-item"><a href="#section-10.2"><span class="kss-ref">10.2</span><span class="kss-name">Sizing</span></a></li>
+              <li class="kss-menu-item"><a href="#section-10.3"><span class="kss-ref">10.3</span><span class="kss-name">Full-screen</span></a></li>
+              <li class="kss-menu-item"><a href="#section-10.4"><span class="kss-ref">10.4</span><span class="kss-name">No overlay</span></a></li>
+              <li class="kss-menu-item"><a href="#section-10.5"><span class="kss-ref">10.5</span><span class="kss-name">Animations</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-10" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">10</span> Reveal</h1>
+            <div class="kss-description">
+              <p>Modal dialogs, or pop-up windows, are handy for prototyping and production. Foundation includes Reveal, our jQuery modal plugin, to make this easy for you.<br><br></p>
+
+            </div>
+          </section>
+          <section id="section-10.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">10.1</span> Basics</h1>
+            <div class="kss-description">
+              <p>To create a modal, add the class <code>.reveal</code>, the attribute <code>data-reveal</code>, and a unique ID to a container.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p><a data-toggle="exampleModal1" aria-controls="exampleModal5">Click me for a modal</a></p>
+<div class="reveal" id="exampleModal1" data-reveal>
+	<p>Reveal modal content</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;&lt;a data-toggle=&quot;exampleModal1&quot; aria-controls=&quot;exampleModal5&quot;&gt;Click me for a modal&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;reveal&quot; id=&quot;exampleModal1&quot; data-reveal&gt;
+	&lt;p&gt;Reveal modal content&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-10.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">10.2</span> Sizing</h1>
+            <div class="kss-description">
+              <p>On small screens, a modal is always 100% of the width of the screen. On medium-sized screens and larger, the width changes to 80%.<br><br>
+The size of a modal can be changed with these sizing classes, which are added to the modal container:</p>
+<ul>
+<li><code>.tiny</code>: 30% wide</li>
+<li><code>.small</code>: 50% wide</li>
+<li><code>.large</code>: 90% wide</li>
+<li><code>.full</code>: 100% width <em>and</em> height, defaults the <code>escClose</code> option to true, as well as creates a close button.</li>
+</ul>
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p><a data-toggle="exampleModal5" aria-controls="exampleModal5">Click me for a tiny modal</a></p>
+<div class="tiny reveal" id="exampleModal5" data-reveal>
+	<p>OH I&#39;M SO TIIINY</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<p><a data-toggle="exampleModal6">Click me for a small modal</a></p>
+<div class="small reveal" id="exampleModal6" data-reveal>
+	<p>I may be small, but I&#39;ve got a big heart!</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<p><a data-toggle="exampleModal7">Click me for a large modal</a></p>
+<div class="large reveal" id="exampleModal7" data-reveal>
+	<p>I&#39;m big, like bear!</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;&lt;a data-toggle=&quot;exampleModal5&quot; aria-controls=&quot;exampleModal5&quot;&gt;Click me for a tiny modal&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;tiny reveal&quot; id=&quot;exampleModal5&quot; data-reveal&gt;
+	&lt;p&gt;OH I&amp;#39;M SO TIIINY&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a data-toggle=&quot;exampleModal6&quot;&gt;Click me for a small modal&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;small reveal&quot; id=&quot;exampleModal6&quot; data-reveal&gt;
+	&lt;p&gt;I may be small, but I&amp;#39;ve got a big heart!&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a data-toggle=&quot;exampleModal7&quot;&gt;Click me for a large modal&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;large reveal&quot; id=&quot;exampleModal7&quot; data-reveal&gt;
+	&lt;p&gt;I&amp;#39;m big, like bear!&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-10.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">10.3</span> Full-screen</h1>
+            <div class="kss-description">
+              <p>A full-screen modal is 100% of the width and height of the window. Add the <code>.full</code> class to make it go.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p><a data-toggle="exampleModal8" aria-controls="exampleModal5">Click me for a full-screen modal</a></p>
+<div class="reveal full" id="exampleModal8" data-reveal>
+	<p>Reveal modal content</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;&lt;a data-toggle=&quot;exampleModal8&quot; aria-controls=&quot;exampleModal5&quot;&gt;Click me for a full-screen modal&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;reveal full&quot; id=&quot;exampleModal8&quot; data-reveal&gt;
+	&lt;p&gt;Reveal modal content&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-10.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">10.4</span> No overlay</h1>
+            <div class="kss-description">
+              <p>To remove the overlay, add the attribute <code>data-overlay=&quot;false&quot;</code> to the modal.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p><a data-toggle="exampleModal9" aria-controls="exampleModal9">Click me for a modal with no overlay.</a></p>
+<div class="reveal" id="exampleModal9" data-reveal data-overlay="false">
+	<p>Reveal modal content</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;&lt;a data-toggle=&quot;exampleModal9&quot; aria-controls=&quot;exampleModal9&quot;&gt;Click me for a modal with no overlay.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;reveal&quot; id=&quot;exampleModal9&quot; data-reveal data-overlay=&quot;false&quot;&gt;
+	&lt;p&gt;Reveal modal content&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-10.5" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">10.5</span> Animations</h1>
+            <div class="kss-description">
+              <p>To use animations from the Motion UI library, include the <code>data-animation-in=&quot;someAnimationIn&quot;</code> and <code>data-animation-out=&quot;someAnimationOut&quot;</code> attributes.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <p><a data-toggle="exampleModal10" aria-controls="exampleModal10">Click me for a modal with an animation.</a></p>
+<div class="reveal" id="exampleModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
+	<p>Reveal modal content</p>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;p&gt;&lt;a data-toggle=&quot;exampleModal10&quot; aria-controls=&quot;exampleModal10&quot;&gt;Click me for a modal with an animation.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;reveal&quot; id=&quot;exampleModal10&quot; data-reveal data-close-on-click=&quot;true&quot; data-animation-in=&quot;spin-in&quot; data-animation-out=&quot;spin-out&quot;&gt;
+	&lt;p&gt;Reveal modal content&lt;/p&gt;
+	&lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    <script src="./../js/script.js"></script>
+
+  </body>
+</html>

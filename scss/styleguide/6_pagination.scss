@@ -1,0 +1,26 @@
+// Pagination
+//
+// Pagination is a type of navigation that lets users click through pages of search results, products, or other related items.
+//
+// Styleguide 6
+
+// Basics
+//
+// A pagination list is just a `<ul>` with the class `.pagination,` and a series of `<li>`/`<a>` pairs. Add the class .current to an `<li>` to mark the current page, or `.disabled` to add disabled styles to a link.<br><br>
+//
+// .text-center - Centered text.
+//
+// Markup:
+//	<ul class="pagination {{modifier_class}}" role="navigation" aria-label="Pagination">
+//		<li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+//		<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+//		<li><a href="#" aria-label="Page 2">2</a></li>
+//		<li><a href="#" aria-label="Page 3">3</a></li>
+//		<li><a href="#" aria-label="Page 4">4</a></li>
+//		<li class="ellipsis" aria-hidden="true"></li>
+//		<li><a href="#" aria-label="Page 12">12</a></li>
+//		<li><a href="#" aria-label="Page 13">13</a></li>
+//		<li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+//	</ul>
+//
+// Styleguide 6.1

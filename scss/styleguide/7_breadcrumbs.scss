@@ -1,0 +1,23 @@
+// Breadcrumbs
+//
+// Breadcrumbs come in handy to show a navigation trail for users clicking through your site.
+//
+// Styleguide 7
+
+// Basics
+//
+// To make a set of breadcrumb links, just add the class `.breadcrumbs` to a `<ul>`, and then add links instead of `<li>` elements.
+//
+// Markup:
+//	<nav aria-label="You are here:" role="navigation">
+//		<ul class="breadcrumbs">
+//			<li><a href="#">Home</a></li>
+//			<li><a href="#">Features</a></li>
+//			<li class="disabled">Gene Splicing</li>
+//			<li>
+//				<span class="show-for-sr">Current: </span> Cloning
+//			</li>
+//		</ul>
+//	</nav>
+//
+// Styleguide 7.1

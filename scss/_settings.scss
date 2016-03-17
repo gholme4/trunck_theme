@@ -279,8 +279,8 @@ $closebutton-color-hover: $black;
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
-$drilldown-arrow-color: $white;
-$drilldown-background: $black;
+$drilldown-arrow-color: $primary-color;
+$drilldown-background: $white;
 
 // 16. Dropdown
 // ------------
@@ -378,7 +378,7 @@ $menu-expand-max: 6;
 // --------------
 
 $offcanvas-size: 250px;
-$offcanvas-background: $black;
+$offcanvas-background: $white;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
@@ -540,7 +540,7 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0;
+$topbar-padding: 0.5rem;
 $topbar-background: #121212;
 $topbar-link-color: #ffffff;
 $topbar-input-width: 200px;

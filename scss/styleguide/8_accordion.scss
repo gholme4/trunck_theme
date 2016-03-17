@@ -1,0 +1,91 @@
+// Accordion
+//
+// Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+//
+// Styleguide 8
+
+// Basic
+//
+// The container for an accordion needs the class `.accordion`, and the attribute `data-accordion`. Note that in these examples, we use a `<ul>`, but you can use any element you want.<br><br>
+// Inside the accordion, place a series of panes with the class `.accordion-item` and the attribute `data-accordion-item`. To mark which pane should be open by default, add the class `.is-active` to that pane.<br><br>
+// Each pane has a title, an `<a>` with the class `.accordion-title`, and a content area, an element with the class `.accordion-content` and the attribute `data-tab-content`.
+//
+// Markup:
+//	<ul class="accordion" data-accordion>
+//		<li class="accordion-item is-active" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 1</a>
+//			<div class="accordion-content" data-tab-content>
+//				I would start in the open state, due to using the `is-active` state class.
+//			</div>
+//		</li>
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 2</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 3</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+// </ul>
+//
+// Styleguide 8.1
+
+// Multi-expand
+//
+// By default, only one pane of an accordion can be open at a time. This can be changed by setting the `multiExpand` option to `true`.
+//
+// Markup:
+//	<ul class="accordion" data-accordion data-multi-expand="true">
+//		<li class="accordion-item is-active" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 1</a>
+//			<div class="accordion-content" data-tab-content>
+//				I would start in the open state, due to using the `is-active` state class.
+//			</div>
+//		</li>
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 2</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 3</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+// </ul>
+//
+// Styleguide 8.2
+
+// All closed
+//
+// By default, at least one pane in an accordion must be open. This can be changed by setting `allowAllClosed` option to `true`.
+//
+// Markup:
+//	<ul class="accordion" data-accordion  data-allow-all-closed="true">
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 1</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 2</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+//		<li class="accordion-item" data-accordion-item>
+//			<a href="#" class="accordion-title">Accordion 3</a>
+//			<div class="accordion-content" data-tab-content>
+//				Content goes here.
+//			</div>
+//		</li>
+// </ul>
+//
+// Styleguide 8.3

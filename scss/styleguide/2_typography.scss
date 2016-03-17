@@ -56,18 +56,18 @@
 //
 // Markup:
 //<ul>
-//<li>List item with a much longer description or more content.</li>
-//<li>List item</li>
-//<li>List item
-//<ul>
-//<li>Nested list item</li>
-//<li>Nested list item</li>
-//<li>Nested list item</li>
-//</ul>
-//</li>
-//<li>List item</li>
-//<li>List item</li>
-//<li>List item</li>
+//	<li>List item with a much longer description or more content.</li>
+//	<li>List item</li>
+//	<li>List item
+//		<ul>
+//			<li>Nested list item</li>
+//			<li>Nested list item</li>
+//			<li>Nested list item</li>
+//		</ul>
+//	</li>
+//	<li>List item</li>
+//	<li>List item</li>
+//	<li>List item</li>
 //</ul>
 //
 // Styleguide 2.4
@@ -75,43 +75,43 @@
 // Ordered Lists
 //
 // Markup:
-//<ol>
-//<li>List item with a much longer description or more content.</li>
-//<li>List item</li>
-//<li>List item
-//<ol>
-//<li>Nested list item</li>
-//<li>Nested list item</li>
-//<li>Nested list item</li>
-//</ol>
-//</li>
-//<li>List item</li>
-//<li>List item</li>
-//<li>List item</li>
-//</ol>
+//	<ol>
+//		<li>List item with a much longer description or more content.</li>
+//		<li>List item</li>
+//		<li>List item
+//			<ol>
+//				<li>Nested list item</li>
+//				<li>Nested list item</li>
+//				<li>Nested list item</li>
+//			</ol>
+//		</li>
+//		<li>List item</li>
+//		<li>List item</li>
+//		<li>List item</li>
+//	</ol>
 //
 // Styleguide 2.5
 
 // Definition Lists
 //
 // Markup:
-//<dl>
-//<dt>Time</dt>
-//<dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
-//<dt>Space</dt>
-//<dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
-//<dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
-//</dl>
+//	<dl>
+//		<dt>Time</dt>
+//		<dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
+//		<dt>Space</dt>
+//		<dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+//		<dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+//	</dl>
 //
 // Styleguide 2.6
 
 // Blockquotes
 //
 // Markup:
-//<blockquote>
-//Those people who think they know everything are a great annoyance to those of us who do.
-//<cite>Isaac Asimov</cite>
-//</blockquote>
+//	<blockquote>
+//		Those people who think they know everything are a great annoyance to those of us who do.
+//		<cite>Isaac Asimov</cite>
+//	</blockquote>
 //
 // Styleguide 2.7
 

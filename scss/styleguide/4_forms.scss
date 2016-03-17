@@ -1,0 +1,146 @@
+// Forms
+//
+// Creating a form in Foundation is designed to be easy but extremely flexible. Forms are built with a combination of standard form elements, as well as grid rows and columns.
+//
+// Styleguide 4
+
+// Text Inputs
+//
+// These input types create a text field: `text`, `date`, `datetime`, `datetime-local`, `email`, `month`, `number`, `password`, `search`, `tel`, `time`, `url`, and `week`.
+//
+// :focus - Focus state.
+// .disabled - Disabled field
+//
+// Markup:
+//<label>Input Label<input type="text" placeholder="placeholder" class="{{modifier_class}}"></label>
+//
+// Styleguide 4.1
+
+// Number Inputs
+//
+// In most desktop browsers, `<input type="number">` elements will have up/down controls inside them, which increment and decrement the number inside the field. These are called spin buttons. You can disable them by setting the `$input-number-spinners` Sass variable to false.
+//
+// Markup:
+// <label>How many puppies?<input type="number" value="100" class="{{modifier_class}}"></label>
+//
+// Styleguide 4.2
+
+// Text Areas
+//
+// The `<textarea>` element creates a multi-line text input.
+//
+// Markup:
+// <label>What books did you read over summer break?<textarea placeholder="None"></textarea></label>
+//
+// Styleguide 4.3
+
+// Select Menus
+//
+// Markup:
+//	<label>Select Menu
+//		<select>
+//			<option value="husker">Husker</option>
+//			<option value="starbuck">Starbuck</option>
+//			<option value="hotdog">Hot Dog</option>
+//			<option value="apollo">Apollo</option>
+//		</select>
+//	</label>
+//
+// Styleguide 4.4
+
+// Checkboxes and Radio Buttons
+//
+// Use groups of checkboxes when the user may select multiple choices from a list, and use radio buttons when the user must select just one choice.
+// Wrap a group of checkboxes or radio buttons in a `<fieldset>` element, and give them a common label using the `<legend>` element. Each individual control should also have its own label, created using a typical `<label>`.
+//
+// Markup:
+//	<div class="row">
+//		<fieldset class="large-6 columns">
+//			<legend>Choose Your Favorite</legend>
+//			<input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+//			<input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+//			<input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+//		</fieldset>
+//		<fieldset class="large-6 columns">
+//			<legend>Check these out</legend>
+//			<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+//			<input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+//			<input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+//		</fieldset>
+//	</div>
+//
+// Styleguide 4.5
+
+// Fieldset Styles
+//
+// To encourage their use as an accessibility tool, the `<fieldset>` element is no longer styled by default. Those styles are now contained in the `.fieldset` class.
+//
+// Markup:
+//	<fieldset class="fieldset">
+//		<legend>Check these out</legend>
+//		<input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+//		<input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+//		<input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+//	</fieldset>
+//
+// Styleguide 4.6
+
+// Help Text
+//
+// Place help text below a field to clarify it's purpose. Whenever you use help text, give the text a unique ID, and add the attribute `aria-describedby` to the input.
+//
+// Markup:
+//	<label>Password
+//		<input type="password" aria-describedby="passwordHelpText">
+//	</label>
+//	<p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an Emoji.</p>
+//
+// Styleguide 4.7
+
+// Inline Labels and Buttons
+//
+// To attach extra text or controls to the left or right of an input field, wrap the elements in an `.input-group container`, then add these classes to the elements inside:
+//
+// Markup:
+//	<div class="input-group">
+//		<span class="input-group-label">$</span>
+//		<input class="input-group-field" type="number">
+//		<div class="input-group-button">
+//			<input type="submit" class="button" value="Submit">
+//		</div>
+//	</div>
+//
+// Styleguide 4.8
+
+// File Upload Button
+//
+// Use `<input type="file">` to create a file upload button. For security reasons, most browsers don't let you style file inputs. To work around that, we can style a form label as a button, and point it to the `<input>`. To properly mask the input, the .`show-for-sr` class is added.
+//
+// Markup:
+//	<label for="exampleFileUpload" class="button">Upload File</label>
+//	<input type="file" id="exampleFileUpload" class="show-for-sr">
+//
+// Styleguide 4.9
+
+// Errors
+//
+// Use `<input type="file">` to create a file upload button. For security reasons, most browsers don't let you style file inputs. To work around that, we can style a form label as a button, and point it to the `<input>`. To properly mask the input, the .`show-for-sr` class is added.
+//
+// Markup:
+//	<form data-abide>
+//	<!-- Add role="alert" -->
+//	<!-- Add "display: block" -->
+//		<div data-abide-error role="alert" class="alert callout" style="display: block;">
+//			<p><i class="fa fa-exclamation-triangle"></i> There are some errors in your form.</p>
+//		</div>
+//		<!-- Add "is-invalid-label" -->
+//		<label class="is-invalid-label">
+//			Name
+//			<!-- Add "is-invalid-input" -->
+//			<input type="text" class="is-invalid-input" required aria-invalid aria-describedby="uuid">
+//			<!-- Add "is-visible" -->
+//			<span class="form-error is-visible" id="uuid">This field is required.</span>
+//		</label>
+//	</form>
+//
+// Styleguide 4.10

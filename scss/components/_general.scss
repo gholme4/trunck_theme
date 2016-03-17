@@ -22,3 +22,8 @@
 h1.page-title {
 	margin-bottom: 30px;
 }
+
+input.disabled, textarea.disabled {
+    background-color: #e6e6e6;
+    cursor: default;
+}

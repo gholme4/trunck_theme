@@ -21,7 +21,7 @@
             <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="styleguide.homepage">
+            <ul class="kss-menu" data-kss-ref="7">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
               <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
@@ -35,17 +35,55 @@
               <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Reveal</span></a></li>
               <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">Table</span></a></li>
             </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-7.1"><span class="kss-ref">7.1</span><span class="kss-name">Basics</span></a></li>
+            </ul>
           </nav>
         </div>
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-0" class="kss-section kss-overview">
-             <h1 id="trunck-styleguide">Trunck Styleguide</h1>
-<p>This the styleguide for the Trunck theme</p>
-<h2 id="license">License</h2>
-<p>This template is under the <a href="https://github.com/htanjo/kss-node-template/blob/master/LICENSE">MIT License</a>.</p>
+          <section id="section-7" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">7</span> Breadcrumbs</h1>
+            <div class="kss-description">
+              <p>Breadcrumbs come in handy to show a navigation trail for users clicking through your site.</p>
 
+            </div>
+          </section>
+          <section id="section-7.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">7.1</span> Basics</h1>
+            <div class="kss-description">
+              <p>To make a set of breadcrumb links, just add the class <code>.breadcrumbs</code> to a <code>&lt;ul&gt;</code>, and then add links instead of <code>&lt;li&gt;</code> elements.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <nav aria-label="You are here:" role="navigation">
+	<ul class="breadcrumbs">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Features</a></li>
+		<li class="disabled">Gene Splicing</li>
+		<li>
+			<span class="show-for-sr">Current: </span> Cloning
+		</li>
+	</ul>
+</nav>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;nav aria-label=&quot;You are here:&quot; role=&quot;navigation&quot;&gt;
+	&lt;ul class=&quot;breadcrumbs&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;disabled&quot;&gt;Gene Splicing&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;show-for-sr&quot;&gt;Current: &lt;/span&gt; Cloning
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
           </section>
         </article>
         <footer class="kss-footer">

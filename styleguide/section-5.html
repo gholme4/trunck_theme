@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trunck Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="./../css/screen.css">
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="5">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Forms</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Menus</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Breadcrumbs</span></a></li>
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Accordion</span></a></li>
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">Callout</span></a></li>
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Reveal</span></a></li>
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">Table</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-5.1"><span class="kss-ref">5.1</span><span class="kss-name">Basic Menus</span></a></li>
+              <li class="kss-menu-item"><a href="#section-5.2"><span class="kss-ref">5.2</span><span class="kss-name">Nested Menus</span></a></li>
+              <li class="kss-menu-item"><a href="#section-5.3"><span class="kss-ref">5.3</span><span class="kss-name">Menu Text</span></a></li>
+              <li class="kss-menu-item"><a href="#section-5.4"><span class="kss-ref">5.4</span><span class="kss-name">Dropdown Menus</span></a></li>
+              <li class="kss-menu-item"><a href="#section-5.5"><span class="kss-ref">5.5</span><span class="kss-name">Drilldown Menu</span></a></li>
+              <li class="kss-menu-item"><a href="#section-5.6"><span class="kss-ref">5.6</span><span class="kss-name">Accordion Menu</span></a></li>
+              <li class="kss-menu-item"><a href="#section-5.7"><span class="kss-ref">5.7</span><span class="kss-name">Top Bar Menu</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-5" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">5</span> Menus</h1>
+            <div class="kss-description">
+              <p>The menu is a flexible, all-purpose component for navigation. It replaces Foundation 5&#39;s inline list, side nav, sub nav, and icon bar, unifying them into one component.</p>
+
+            </div>
+          </section>
+          <section id="section-5.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.1</span> Basic Menus</h1>
+            <div class="kss-description">
+              <p>All versions of the menu are a <code>&lt;ul&gt;</code> filled with <code>&lt;li&gt;</code> elements containing links. By default, a Menu is horizontally oriented.<br><br>
+By default, each item in the menu aligns to the left. They can also be aligned to the right with the <code>.align-right</code> class.<br><br>
+Add the <code>.vertical</code> class to a Menu to switch its orientation.<br><br>
+Add the <code>.simple</code> class to a Menu to remove the padding and color change.<br></p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="menu [modifier class]">
+	<li><a href="#">One</a></li>
+	<li><a href="#">Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.align-right</div>
+                  <div class="kss-modifier-description">
+                    Align right.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <ul class="menu align-right">
+	<li><a href="#">One</a></li>
+	<li><a href="#">Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.align-left</div>
+                  <div class="kss-modifier-description">
+                    Align left.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <ul class="menu align-left">
+	<li><a href="#">One</a></li>
+	<li><a href="#">Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.vertical</div>
+                  <div class="kss-modifier-description">
+                    Vertical menu.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <ul class="menu vertical">
+	<li><a href="#">One</a></li>
+	<li><a href="#">Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.simple</div>
+                  <div class="kss-modifier-description">
+                    Simple menu.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <ul class="menu simple">
+	<li><a href="#">One</a></li>
+	<li><a href="#">Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;menu [modifier class]&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;One&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Four&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-5.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.2</span> Nested Menus</h1>
+            <div class="kss-description">
+              <p>Add a new menu inside the <code>&lt;li&gt;</code> of a Menu and add the class <code>.nested</code> to create a nested menu. The nested Menu has extra padding on the inside.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="vertical menu">
+	<li>
+		<a href="#">One</a>
+		<ul class="nested vertical menu">
+			<li><a href="#">One</a></li>
+			<li><a href="#">Two</a></li>
+			<li><a href="#">Three</a></li>
+			<li><a href="#">Four</a></li>
+		</ul>
+	</li>
+	<li class="active"><a href="#" >Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;vertical menu&quot;&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot;&gt;One&lt;/a&gt;
+		&lt;ul class=&quot;nested vertical menu&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;One&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Four&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot; &gt;Two&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Four&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-5.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.3</span> Menu Text</h1>
+            <div class="kss-description">
+              <p>Because the padding of the menu item is applied to the <code>&lt;a&gt;</code>, if you try to add an item that&#39;s text only, it will be misaligned. To get around this, add the class <code>.menu-text</code> to any <code>&lt;li&gt;</code> that doesn&#39;t have a link inside of it.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="menu">
+	<li class="menu-text">Site Title</li>
+	<li><a href="#">Two</a></li>
+	<li><a href="#">Three</a></li>
+	<li><a href="#">Four</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;menu&quot;&gt;
+	&lt;li class=&quot;menu-text&quot;&gt;Site Title&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Four&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-5.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.4</span> Dropdown Menus</h1>
+            <div class="kss-description">
+              <p>Dropdown menus build on the Menu component&#39;s syntax. Add the class <code>.dropdown</code> and the attribute <code>data-dropdown-menu</code> to the menu container to set up the dropdown.<br><br>
+To create dropdown menus, nest a new <code>&lt;ul&gt;</code> inside an <code>&lt;li&gt;</code>. You can nest further to create more levels of dropdowns.<br><br>
+Add the <code>.vertical</code> class to the top-level menu to make it vertical. Sub-menus are automatically vertical, regardless of the orientation of the top-level menu.<br><br></p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="dropdown menu [modifier class]" data-dropdown-menu data-closing-time="0" style="max-width: 500px;">
+	<li>
+		<a href="#">Item 1</a>
+		<ul class="menu">
+			<li><a href="#">Item 1A</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Item 2</a></li>
+	<li><a href="#">Item 3</a></li>
+	<li><a href="#">Item 4</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.vertical</div>
+                  <div class="kss-modifier-description">
+                    Vertical menu.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <ul class="dropdown menu vertical" data-dropdown-menu data-closing-time="0" style="max-width: 500px;">
+	<li>
+		<a href="#">Item 1</a>
+		<ul class="menu">
+			<li><a href="#">Item 1A</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Item 2</a></li>
+	<li><a href="#">Item 3</a></li>
+	<li><a href="#">Item 4</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;dropdown menu [modifier class]&quot; data-dropdown-menu data-closing-time=&quot;0&quot; style=&quot;max-width: 500px;&quot;&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
+		&lt;ul class=&quot;menu&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1A&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-5.5" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.5</span> Drilldown Menu</h1>
+            <div class="kss-description">
+              <p>Drilldowns use the standard Menu syntax, using <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;a&gt;</code>. Add <code>data-drilldown</code> to the root menu to set up the drilldown.<br><br>
+To create sub-menus, place a <code>&lt;ul&gt;</code> next to an <code>&lt;a&gt;</code>. Clicking that <code>&lt;a&gt;</code> will then open the <code>&lt;ul&gt;</code> that it&#39;s next to.<br><br>
+Any <code>&lt;a&gt;</code> without a submenu will function like a normal link.<br></p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="vertical menu" data-drilldown>
+	<li>
+		<a href="#">Item 1</a>
+		<ul class="vertical menu">
+			<li><a href="#">Item 1A</a></li>
+			<li><a href="#">Item 1B</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Item 2</a></li>
+	<li><a href="#">Item 3</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;vertical menu&quot; data-drilldown&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
+		&lt;ul class=&quot;vertical menu&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1A&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1B&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-5.6" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.6</span> Accordion Menu</h1>
+            <div class="kss-description">
+              <p>Accordion menus follow the basic Menu syntax of <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;a&gt;</code>. To convert a basic menu into an accordion, add the attribute <code>data-accordion-menu</code>. You probably also want it to be vertical, so add the class <code>.vertical</code> as well.<br><br>
+Any <code>&lt;a&gt;</code> will behave like a standard link. However, any <code>&lt;a&gt;</code> paired with a nested <ul> menu will then slide that sub-menu up and down when clicked on.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="vertical menu" data-accordion-menu>
+	<li>
+		<a href="#">Item 1</a>
+		<ul class="menu vertical nested">
+			<li><a href="#">Item 1A</a></li>
+			<li><a href="#">Item 1B</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Item 2</a></li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;vertical menu&quot; data-accordion-menu&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
+		&lt;ul class=&quot;menu vertical nested&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1A&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1B&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-5.7" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.7</span> Top Bar Menu</h1>
+            <div class="kss-description">
+              <p>A top bar (<code>.top-bar</code>) can have two sections: a left-hand section (<code>.top-bar-left</code>) and a right-hand section (<code>.top-bar-right</code>). On small screens, these sections stack on top of each other.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="top-bar">
+	<div class="top-bar-left">
+		<ul class="dropdown menu" data-dropdown-menu>
+			<li class="menu-text">Site Title</li>
+			<li>
+				<a href="#">One</a>
+				<ul class="menu vertical">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Two</a></li>
+			<li><a href="#">Three</a></li>
+		</ul>
+	</div>
+	<div class="top-bar-right">
+		<ul class="menu">
+			<li><input type="search" placeholder="Search"></li>
+			<li><button type="button" class="button">Search</button></li>
+		</ul>
+	</div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;div class=&quot;top-bar&quot;&gt;
+	&lt;div class=&quot;top-bar-left&quot;&gt;
+		&lt;ul class=&quot;dropdown menu&quot; data-dropdown-menu&gt;
+			&lt;li class=&quot;menu-text&quot;&gt;Site Title&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot;&gt;One&lt;/a&gt;
+				&lt;ul class=&quot;menu vertical&quot;&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;One&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;top-bar-right&quot;&gt;
+		&lt;ul class=&quot;menu&quot;&gt;
+			&lt;li&gt;&lt;input type=&quot;search&quot; placeholder=&quot;Search&quot;&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Search&lt;/button&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    <script src="./../js/script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trunck Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="./../css/screen.css">
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="8">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Forms</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Menus</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Breadcrumbs</span></a></li>
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Accordion</span></a></li>
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">Callout</span></a></li>
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Reveal</span></a></li>
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">Table</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-8.1"><span class="kss-ref">8.1</span><span class="kss-name">Basic</span></a></li>
+              <li class="kss-menu-item"><a href="#section-8.2"><span class="kss-ref">8.2</span><span class="kss-name">Multi-expand</span></a></li>
+              <li class="kss-menu-item"><a href="#section-8.3"><span class="kss-ref">8.3</span><span class="kss-name">All closed</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-8" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">8</span> Accordion</h1>
+            <div class="kss-description">
+              <p>Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.</p>
+
+            </div>
+          </section>
+          <section id="section-8.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">8.1</span> Basic</h1>
+            <div class="kss-description">
+              <p>The container for an accordion needs the class <code>.accordion</code>, and the attribute <code>data-accordion</code>. Note that in these examples, we use a <code>&lt;ul&gt;</code>, but you can use any element you want.<br><br>
+Inside the accordion, place a series of panes with the class <code>.accordion-item</code> and the attribute <code>data-accordion-item</code>. To mark which pane should be open by default, add the class <code>.is-active</code> to that pane.<br><br>
+Each pane has a title, an <code>&lt;a&gt;</code> with the class <code>.accordion-title</code>, and a content area, an element with the class <code>.accordion-content</code> and the attribute <code>data-tab-content</code>.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="accordion" data-accordion>
+	<li class="accordion-item is-active" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 1</a>
+		<div class="accordion-content" data-tab-content>
+			I would start in the open state, due to using the `is-active` state class.
+		</div>
+	</li>
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 2</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 3</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;accordion&quot; data-accordion&gt;
+	&lt;li class=&quot;accordion-item is-active&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 1&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			I would start in the open state, due to using the &#x60;is-active&#x60; state class.
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 2&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 3&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-8.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">8.2</span> Multi-expand</h1>
+            <div class="kss-description">
+              <p>By default, only one pane of an accordion can be open at a time. This can be changed by setting the <code>multiExpand</code> option to <code>true</code>.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="accordion" data-accordion data-multi-expand="true">
+	<li class="accordion-item is-active" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 1</a>
+		<div class="accordion-content" data-tab-content>
+			I would start in the open state, due to using the `is-active` state class.
+		</div>
+	</li>
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 2</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 3</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;accordion&quot; data-accordion data-multi-expand=&quot;true&quot;&gt;
+	&lt;li class=&quot;accordion-item is-active&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 1&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			I would start in the open state, due to using the &#x60;is-active&#x60; state class.
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 2&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 3&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-8.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">8.3</span> All closed</h1>
+            <div class="kss-description">
+              <p>By default, at least one pane in an accordion must be open. This can be changed by setting <code>allowAllClosed</code> option to <code>true</code>.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="accordion" data-accordion  data-allow-all-closed="true">
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 1</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 2</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+	<li class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Accordion 3</a>
+		<div class="accordion-content" data-tab-content>
+			Content goes here.
+		</div>
+	</li>
+</ul>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;accordion&quot; data-accordion  data-allow-all-closed=&quot;true&quot;&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 1&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 2&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;accordion-item&quot; data-accordion-item&gt;
+		&lt;a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Accordion 3&lt;/a&gt;
+		&lt;div class=&quot;accordion-content&quot; data-tab-content&gt;
+			Content goes here.
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    <script src="./../js/script.js"></script>
+
+  </body>
+</html>

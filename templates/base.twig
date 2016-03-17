@@ -33,13 +33,15 @@
     			<!-- Header / main menu -->
 				<header class="header" >
 					{% block header %}
-						<div class="top-bar">
+						<div class="title-bar hide-for-medium">
+							<div class="title-bar-left">
+								<button class="menu-icon" type="button" data-open="offCanvas"></button>
+								<span class="title-bar-title">{{ site.title }}</span>
+							</div>
+						</div>
+						<div class="top-bar show-for-medium">
 							<div class="top-bar-left">
-								<ul class="dropdown menu hide-for-medium" data-dropdown-menu>
-									<li> <button class="menu-icon" type="button" data-open="offCanvas"></button></li>
-									<li class="menu-text" role="menuitem">{{ site.title }}</li>
-								</ul>
-								<ul class="dropdown menu show-for-medium" data-dropdown-menu>
+								<ul class="dropdown menu " data-dropdown-menu>
 									<li class="menu-text" role="menuitem">{{ site.title }}</li>
 									{% for item in menu.get_items %}
 										<li class="nav-item {{item.classes | join(' ')}}  {% if item.get_children %} has-submenu {% endif %}">

@@ -1,0 +1,55 @@
+// Table
+//
+// Tables have responsive modifiers to help solve some of your layout issues based on your tables needs.
+//
+// Styleguide 11
+
+// Basics
+//
+// Need to spiff up the table just a tad? Just add the class `.hover` to lightly darken the table rows on hover.<br><br>
+// To stack a table on small screens, add the class `.stack`.
+//
+// .hover - Lightly darken table row on hover.
+// .stack - Stack table on small screens
+//
+// Markup:
+//	<table class="{{ modifier_class }}">
+//		<thead>
+//			<tr>
+//				<th width="200">Table Header</th>
+//				<th>Table Header</th>
+//				<th width="150">Table Header</th>
+//				<th width="150">Table Header</th>
+//			</tr>
+//		</thead>
+//		<tbody>
+//			<tr>
+//				<td>Content Goes Here</td>
+//				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+//				<td>Content Goes Here</td>
+//				<td>Content Goes Here</td>
+//			</tr>
+//			<tr>
+//				<td>Content Goes Here</td>
+//				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+//				<td>Content Goes Here</td>
+//				<td>Content Goes Here</td>
+//			</tr>
+//			<tr>
+//				<td>Content Goes Here</td>
+//				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+//				<td>Content Goes Here</td>
+//				<td>Content Goes Here</td>
+//			</tr>
+//		</tbody>
+//		<tfoot>
+//			<tr>
+//				<td>Here&#39;s a footer</td>
+//				<td></td>
+//				<td></td>
+//				<td></td>
+//        	</tr>
+//		</tfoot>
+//	</table>
+//
+// Styleguide 11.1

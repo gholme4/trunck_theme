@@ -1,0 +1,65 @@
+// Callout
+//
+// A callout is just an element with a .callout class applied. You can put any kind of content inside.
+//
+// Styleguide 9
+
+// Basics
+//
+// Callouts can be colored using the `.secondary`, `.primary`, `.success`, `.warning`, or `.alert` classes. Links inside the callout will be tinted to match the color of the callout.
+//
+// .primary  - Primary color.
+// .secondary  - Secondary color.
+// .success - Success color.
+// .alert   - Alert color.
+// .warning   - Warning color.
+//
+// Markup:
+//	<div class="callout {{ modifier_class }}">
+//		<h5>This is a callout.</h5>
+//		<p>It has an easy to override visual style, and is appropriately subdued.</p>
+//		<a href="#">It's dangerous to go alone, take this.</a>
+//	</div>
+//
+// Styleguide 9.1
+
+// Sizing
+//
+// Callouts can be sized using the `.small` and `.large` classes. These will affect the padding around content to be smaller and larger respectively.
+//
+// .small  - Small size.
+// .large  - Large size.
+//
+// Markup:
+//	<div class="callout {{ modifier_class }}">
+//		<h5>This is a callout.</h5>
+//		<p>It has an easy to override visual style, and is appropriately subdued.</p>
+//		<a href="#">It's dangerous to go alone, take this.</a>
+//	</div>
+//
+// Styleguide 9.1
+
+// Making Closable
+//
+// Pair the callout with the close button component and `data-closable` attribute to create a dismissable alert box.<br><br>
+// Any element can be used as a close trigger, not just close button. Adding the attribute `data-close` to any element within the callout will turn it into a close trigger.
+// When using the `data-closable` attribute, you can optionally add Motion UI classes to the attribute to change the closing animation. If no class is added, the plugin defaults to jQuery's `.fadeOut()` function.
+//
+// Markup:
+//	<div class="alert callout" data-closable>
+//		<h5>This is Important!</h5>
+//		<p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
+//		<p>I'm using the default <code>data-closable</code> parameters, and simply fade out.</p>
+//		<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+//			<span aria-hidden="true">&times;</span>
+//		</button>
+//	</div>
+//	<div class="success callout" data-closable="slide-out-right">
+//		<h5>This a friendly message.</h5>
+//		<p>And when you're done with me, I close using a Motion UI animation.</p>
+//		<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+//			<span aria-hidden="true">&times;</span>
+//		</button>
+//	</div>
+//
+// Styleguide 9.2
