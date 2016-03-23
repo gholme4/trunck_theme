@@ -9757,22 +9757,39 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 /* line 15, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.swatch {
-  padding: 30px;
+* {
+  outline: none;
 }
 
 /* line 18, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
-.content-wrapper {
-  padding-top: 30px;
+.swatch {
+  padding: 1.875rem;
 }
 
 /* line 22, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
 h1.page-title {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 /* line 26, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
 input.disabled, textarea.disabled {
   background-color: #e6e6e6;
   cursor: default;
+}
+
+/* line 31, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
+.off-canvas-wrapper-inner {
+  background-color: #0a0a0a;
+}
+
+/* line 36, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_general.scss */
+div.content-wrapper {
+  padding-bottom: 1.875rem;
+  padding-top: 1.875rem;
+}
+
+/* line 1, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/components/_footer.scss */
+footer#footer {
+  color: #fefefe;
+  padding: 0.9375rem;
 }

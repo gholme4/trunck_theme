@@ -1,0 +1,90 @@
+{% block html_head_container %}
+
+{% include 'header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+		<div class="off-canvas-wrapper">
+    		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    			{# Container for off canvas mobile menu #}
+    			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    				<ul class="vertical menu" data-drilldown>
+						{% for item in menu.get_items %}
+							<li class="nav-item {{item.classes | join(' ')}}  {% if item.get_children %} has-submenu {% endif %}">
+								<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+								{% if item.get_children %}
+									<ul class="vertical menu">
+									{% for child in item.get_children %}
+										<li >
+											<a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+										</li>
+									{% endfor %}
+									</ul>
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+    			</div>
+
+    			{# Header / main menu #}
+				<header class="header" >
+					{% block header %}
+						<div class="title-bar hide-for-medium">
+							<div class="title-bar-left">
+								<button class="menu-icon" type="button" data-open="offCanvas"></button>
+								<span class="title-bar-title"><a href="{{site_url}}">{{ site.title }}</a></span>
+							</div>
+						</div>
+						<div class="top-bar show-for-medium">
+							<div class="top-bar-left">
+								<ul class="dropdown menu" data-closing-time="0" data-dropdown-menu>
+									<li role="menuitem"><a href="{{site_url}}">{{ site.title }}</a></li>
+									{% for item in menu.get_items %}
+										<li class="nav-item {{item.classes | join(' ')}}  {% if item.get_children %} has-submenu {% endif %}">
+											<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+											{% if item.get_children %}
+												<ul class="submenu menu">
+												{% for child in item.get_children %}
+													<li >
+														<a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+													</li>
+												{% endfor %}
+												</ul>
+											{% endif %}
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+							<div class="top-bar-right">
+								<ul class="menu">
+									<li><form action="{{ site_url }}"><input type="search" name="s" placeholder="{{ "Search"|intl }}"></form></li>
+								</ul>
+							</div>
+						</div>
+					{% endblock %}
+				</header>
+
+				{# Main content area #}
+				<div id="content" role="main" class="content-wrapper off-canvas-content" data-off-canvas-content>
+					{% block content %}
+						{{ 'Sorry no content is available'|intl }}
+					{% endblock %}
+				</div>
+
+				{# Footer #}
+				{% block footer %}
+					<footer id="footer">
+						{% include 'footer.twig' %}
+					</footer>
+					{{ function('wp_footer') }}
+					{{ function("edit_post_link")}}
+				{% endblock %}
+			</div>
+		</div>
+
+	</body>
+</html>

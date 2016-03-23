@@ -1,0 +1,35 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="post-type-{{post.post_type}}" id="post-{{post.ID}}">	
+	<div class="row">
+		<div class="columns medium-12">
+			{% if post.get_thumbnail %}
+				<img class="thumbnail" src="{{ post.get_thumbnail.get_src|resize(1200, 400) }}" alt="{{post.title}}" />
+			{% endif %}
+		</div>
+	</div>
+	<div class="row">
+		<div class="columns medium-12">{{ post.content }}</div>
+	</div>
+
+	<div class="row">
+		<div class="columns medium-12"><h2>{{ "Recent Posts"|intl }}</h2></div>
+	</div>
+	<div class="row">
+		{% for latest_post in latest_posts %}
+		<div class="columns medium-4">
+			<article>
+				<h3>{{ latest_post.post_title }}</h3>
+				{% if post.get_thumbnail %}
+					<img class="thumbnail" src="{{ post.get_thumbnail.get_src|resize(400, 200) }}" alt="{{post.title}}" />
+				{% endif %}
+				<p> {{ latest_post.get_preview }} </p>
+			</article>
+		</div>
+		{% endfor %}
+	</div>
+
+	
+</div>
+{% endblock %}

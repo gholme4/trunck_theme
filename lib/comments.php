@@ -1,7 +1,7 @@
 <?php
 
 // Custom Comments Callback
-function fission_comments($comment, $args, $depth)
+function trunck_comments($comment, $args, $depth)
 {
     $GLOBALS['comment'] = $comment;
     extract($args, EXTR_SKIP);

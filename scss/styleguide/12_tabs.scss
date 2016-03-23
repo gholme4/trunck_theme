@@ -1,0 +1,55 @@
+// Tabs
+//
+// Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+//
+// Styleguide 12
+
+// Basics
+//
+// There are two pieces to a tabbed interface: the tabs themselves, and the content for each tab. The tabs are an element with the class `.tabs`, and each item has the class `.tabs-title`. Each tab contains a link to a tab. The `href` of each link should match the ID of a tab.
+//
+// Markup:
+//	<ul class="tabs" data-tabs id="example-tabs">
+//		<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+//		<li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+//	</ul>
+//	<div class="tabs-content" data-tabs-content="example-tabs">
+//		<div class="tabs-panel is-active" id="panel1">
+//			<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+//		</div>
+//		<div class="tabs-panel" id="panel2">
+//			<p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+//		</div>
+//	</div>
+//
+// Styleguide 12.1
+
+// Vertical Tabs
+//
+// There are two pieces to a tabbed interface: the tabs themselves, and the content for each tab. The tabs are an element with the class `.tabs`, and each item has the class `.tabs-title`. Each tab contains a link to a tab. The `href` of each link should match the ID of a tab.
+//
+// Markup:
+//	<div class="row collapse" data-equalizer>
+//		<div class="medium-3 columns">
+//			<ul class="tabs vertical" id="example-vert-tabs" data-tabs data-equalizer-watch>
+//				<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+//				<li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+//				<li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+//			</ul>
+//		</div>
+//		<div class="medium-9 columns">
+//			<div class="tabs-content vertical" data-tabs-content="example-vert-tabs" data-equalizer-watch>
+//				<div class="tabs-panel is-active" id="panel1v">
+//					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+//				</div>
+//				<div class="tabs-panel" id="panel2v">
+//					<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+//				</div>
+//				<div class="tabs-panel" id="panel3v">
+//					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+//				</div>
+//			</div>
+//		</div>
+//	</div>
+//
+// Styleguide 12.2

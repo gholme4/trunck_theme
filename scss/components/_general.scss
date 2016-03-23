@@ -12,18 +12,28 @@
 	&-black       { background: $black; }
 }
 
-.swatch {
-	padding: 30px;
+* {
+	outline: none;
 }
-.content-wrapper {
-	padding-top: 30px;
+.swatch {
+	padding: rem-calc(30);
 }
 
 h1.page-title {
-	margin-bottom: 30px;
+	margin-bottom: rem-calc(30);
 }
 
 input.disabled, textarea.disabled {
     background-color: #e6e6e6;
     cursor: default;
+}
+
+.off-canvas-wrapper-inner {
+	background-color: $black;
+
+}
+
+div.content-wrapper {
+	padding-bottom: rem-calc(30);
+	padding-top: rem-calc(30);
 }

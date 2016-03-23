@@ -2,7 +2,7 @@
 
 if  (trunck_check_theme_setup()) 
 {
-    Timber::$dirname = array('templates', 'views');
+    Timber::$dirname = array('views');
 
     class TrunckSite extends TimberSite {
 
@@ -163,9 +163,10 @@ function trunck_pagination()
         'format' => '?paged=%#%',
         'current' => max(1, get_query_var('paged')),
         'total' => $wp_query->max_num_pages
+
     ));
+
 }
-//add_action('init', 'trunck_pagination'); // Add our HTML5 Pagination
 
 // Remove Admin bar
 function trunck_remove_admin_bar()

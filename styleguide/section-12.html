@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trunck Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="./../css/screen.css">
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Trunck Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="12">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Colors</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Forms</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Menus</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Breadcrumbs</span></a></li>
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Accordion</span></a></li>
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">Callout</span></a></li>
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Reveal</span></a></li>
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">Table</span></a></li>
+              <li class="kss-menu-item"><a href="section-12.html"><span class="kss-ref">12</span><span class="kss-name">Tabs</span></a></li>
+              <li class="kss-menu-item"><a href="section-13.html"><span class="kss-ref">13</span><span class="kss-name">Tooltip</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-12.1"><span class="kss-ref">12.1</span><span class="kss-name">Basics</span></a></li>
+              <li class="kss-menu-item"><a href="#section-12.2"><span class="kss-ref">12.2</span><span class="kss-name">Vertical Tabs</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-12" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">12</span> Tabs</h1>
+            <div class="kss-description">
+              <p>Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.</p>
+
+            </div>
+          </section>
+          <section id="section-12.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.1</span> Basics</h1>
+            <div class="kss-description">
+              <p>There are two pieces to a tabbed interface: the tabs themselves, and the content for each tab. The tabs are an element with the class <code>.tabs</code>, and each item has the class <code>.tabs-title</code>. Each tab contains a link to a tab. The <code>href</code> of each link should match the ID of a tab.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <ul class="tabs" data-tabs id="example-tabs">
+	<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+	<li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="example-tabs">
+	<div class="tabs-panel is-active" id="panel1">
+		<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+	</div>
+	<div class="tabs-panel" id="panel2">
+		<p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+	</div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;ul class=&quot;tabs&quot; data-tabs id=&quot;example-tabs&quot;&gt;
+	&lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#panel1&quot; aria-selected=&quot;true&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;tabs-title&quot;&gt;&lt;a href=&quot;#panel2&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tabs-content&quot; data-tabs-content=&quot;example-tabs&quot;&gt;
+	&lt;div class=&quot;tabs-panel is-active&quot; id=&quot;panel1&quot;&gt;
+		&lt;p&gt;Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;tabs-panel&quot; id=&quot;panel2&quot;&gt;
+		&lt;p&gt;Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-12.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.2</span> Vertical Tabs</h1>
+            <div class="kss-description">
+              <p>There are two pieces to a tabbed interface: the tabs themselves, and the content for each tab. The tabs are an element with the class <code>.tabs</code>, and each item has the class <code>.tabs-title</code>. Each tab contains a link to a tab. The <code>href</code> of each link should match the ID of a tab.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="row collapse" data-equalizer>
+	<div class="medium-3 columns">
+		<ul class="tabs vertical" id="example-vert-tabs" data-tabs data-equalizer-watch>
+			<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+			<li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+			<li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+		</ul>
+	</div>
+	<div class="medium-9 columns">
+		<div class="tabs-content vertical" data-tabs-content="example-vert-tabs" data-equalizer-watch>
+			<div class="tabs-panel is-active" id="panel1v">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="tabs-panel" id="panel2v">
+				<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+			</div>
+			<div class="tabs-panel" id="panel3v">
+				<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;div class=&quot;row collapse&quot; data-equalizer&gt;
+	&lt;div class=&quot;medium-3 columns&quot;&gt;
+		&lt;ul class=&quot;tabs vertical&quot; id=&quot;example-vert-tabs&quot; data-tabs data-equalizer-watch&gt;
+			&lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#panel1v&quot; aria-selected=&quot;true&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li class=&quot;tabs-title&quot;&gt;&lt;a href=&quot;#panel2v&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+			&lt;li class=&quot;tabs-title&quot;&gt;&lt;a href=&quot;#panel3v&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;medium-9 columns&quot;&gt;
+		&lt;div class=&quot;tabs-content vertical&quot; data-tabs-content=&quot;example-vert-tabs&quot; data-equalizer-watch&gt;
+			&lt;div class=&quot;tabs-panel is-active&quot; id=&quot;panel1v&quot;&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;tabs-panel&quot; id=&quot;panel2v&quot;&gt;
+				&lt;p&gt;Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;tabs-panel&quot; id=&quot;panel3v&quot;&gt;
+				&lt;p&gt;Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/kss-node/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/highlight.pack.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+    <script src="./../js/script.js"></script>
+
+  </body>
+</html>
