@@ -1,0 +1,66 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="post-type-{{post.post_type}}" id="post-{{post.ID}}">	
+
+	<div class="row">
+		<div class="columns medium-8 {{sidebar_class}}">
+			{% if post.get_thumbnail %}
+				<img class="thumbnail" src="{{ post.get_thumbnail.get_src|resize(800, 400) }}" alt="{{post.title}}" />
+			{% endif %}
+
+			<h1 class="page-title">{{ post.title }}</h1>
+
+			{{ post.content }}
+			
+			<form action="" method="post" data-abide novalidate>
+				<div class="row">
+					<div class="medium-6 columns">
+						<label>{{ 'Name'|intl }}
+							<input type="text" name="name" placeholder="Name" required>
+							<span class="form-error">
+								{{ 'This field is required'|intl }}
+							</span>
+						</label>
+					</div>
+					<div class="medium-6 columns">
+						<label>{{ 'Email'|intl }}
+							<input type="email" name="email" placeholder="Email" required>
+							<span class="form-error">
+								{{ 'This field is required'|intl }}
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-12 columns">
+						<label>{{ 'Why are you reaching out to us today?'|intl }}
+							<select name="inquiry_type">
+								<option value="general">{{ 'General'|intl }}</option>
+								<option value="investments">{{ 'Investments'|intl }}</option>
+								<option value="production_information">{{ 'Product Information'|intl }}</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-12 columns">
+						<label>{{ 'Your Message'|intl }}
+							<textarea name="message" required></textarea>
+							<span class="form-error">
+								{{ 'This field is required'|intl }}
+							</span>
+						</label>
+						<button class="button" type="submit" value="Submit">{{ 'Submit'|intl }}</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="sidebar columns medium-3">
+			{{sidebar_widget}}
+		</div>
+	</div>
+</div>
+{% endblock %}

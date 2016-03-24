@@ -8245,6 +8245,7 @@ var MotionUI = {
 
 		init: function () {
 			this.toggleOffCanvas();
+			this.formatPagination();
 		},
 		toggleOffCanvas: function () {
 
@@ -8255,6 +8256,13 @@ var MotionUI = {
 				{
 					$('#offCanvas').foundation('close');
 				}
+			});
+		},
+		formatPagination: function () {
+			// Update default WordPress pagination to match Foundation markup 
+			$("ul.page-numbers").each(function (i, el) {
+				var $ul = $(this);
+				$ul.attr("class", "text-center pagination").attr("role", "navigation");
 			});
 		}
 	};

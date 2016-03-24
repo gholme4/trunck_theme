@@ -36,13 +36,13 @@
 						<div class="title-bar hide-for-medium">
 							<div class="title-bar-left">
 								<button class="menu-icon" type="button" data-open="offCanvas"></button>
-								<span class="title-bar-title"><a href="{{site_url}}">{{ site.title }}</a></span>
+								<span class="title-bar-title"><a href="{{site.url}}">{{ site.title }}</a></span>
 							</div>
 						</div>
 						<div class="top-bar show-for-medium">
 							<div class="top-bar-left">
 								<ul class="dropdown menu" data-closing-time="0" data-dropdown-menu>
-									<li role="menuitem"><a href="{{site_url}}">{{ site.title }}</a></li>
+									<li role="menuitem"><a href="{{site.url}}">{{ site.title }}</a></li>
 									{% for item in menu.get_items %}
 										<li class="nav-item {{item.classes | join(' ')}}  {% if item.get_children %} has-submenu {% endif %}">
 											<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
