@@ -115,7 +115,7 @@ module.exports = function(grunt) {
                 // command for generating styleguide
                 // flags for configuration are available here:
                 // https://github.com/kss-node/kss-node#using-the-command-line-tool
-                command: 'kss-node --placeholder "[modifier class]" --source ./scss --destination ./styleguide --css ./../css/screen.css --js ./../js/script.js --homepage "./../kss-node-template/homepage.md" -t "kss-node-template" --verbose'
+                command: './node_modules/.bin/kss-node --placeholder "[modifier class]" --source ./scss --destination ./styleguide --css ./../css/screen.css --js ./../js/script.js --homepage "./../kss-node-template/homepage.md" -t "kss-node-template" --verbose'
             }
         }
 	});
