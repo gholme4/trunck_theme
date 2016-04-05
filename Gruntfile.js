@@ -37,7 +37,17 @@ module.exports = function(grunt) {
 				files: {
 					'css/print.min.css': 'scss/print.scss',
 				}
-			}
+			},
+			files: [
+                {
+                    expand: false,
+                    cwd: "./scss",
+                    src: ["**/*.scss"],
+                    dest: "./css",
+                    ext: ".css"
+                }
+            ]
+
 
 		},
 
