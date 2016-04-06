@@ -1,0 +1,5 @@
+/* line 3, /Users/gholme4/Documents/MAMP/htdocs/trunck/wp-content/themes/trunck/scss/templates/page_home.scss */
+div.content-wrapper {
+  padding-bottom: rem-calc(30);
+  padding-top: rem-calc(30);
+}

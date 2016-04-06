@@ -10,7 +10,27 @@ module.exports = function(grunt) {
 			options: {
 				sourceMap: false
 			},
-
+			// Global CSS file - production
+			globalScreenProd: {
+				options: {
+					outputStyle: 'compressed',
+					sourceComments: false
+				},
+				files: {
+					'css/global.screen.min.css': 'scss/global.scss',
+				}
+			},
+			// Global CSS file - development
+			globalScreenDev: {
+				options: {
+					outputStyle: 'expanded',
+					sourceComments: true
+				},
+				files: {
+					'css/global.screen.css': 'scss/global.scss',
+				}
+			},
+			// Main CSS file - production
 			screenProd: {
 				options: {
 					outputStyle: 'compressed',
@@ -20,6 +40,7 @@ module.exports = function(grunt) {
 					'css/screen.min.css': 'scss/app.scss',
 				}
 			},
+			// Main CSS file - development
 			screenDev: {
 				options: {
 					outputStyle: 'expanded',
@@ -29,6 +50,7 @@ module.exports = function(grunt) {
 					'css/screen.css': 'scss/app.scss',
 				}
 			},
+			// Print styles
 			print: {
 				options: {
 					outputStyle: 'compressed',
@@ -38,16 +60,34 @@ module.exports = function(grunt) {
 					'css/print.min.css': 'scss/print.scss',
 				}
 			},
-			files: [
-                {
-                    expand: false,
-                    cwd: "./scss",
-                    src: ["**/*.scss"],
-                    dest: "./css",
-                    ext: ".css"
-                }
-            ]
-
+			// Template CSS files - production
+			templatesProd: {
+				options: {
+					outputStyle: 'compressed',
+					sourceComments: false
+				},
+				files: [{
+					expand: true,
+					cwd: "./scss/templates/",
+					src: ["**/*.scss"],
+					dest: "css/templates/",
+					ext: ".min.css"
+				}]
+            },
+            // Template CSS files - development
+            templatesDev: {
+				options: {
+					outputStyle: 'expanded',
+					sourceComments: true
+				},
+				files: [{
+					expand: true,
+					cwd: "./scss/templates/",
+					src: ["**/*.scss"],
+					dest: "css/templates/",
+					ext: ".css"
+				}]
+            }
 
 		},
 

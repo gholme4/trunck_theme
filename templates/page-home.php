@@ -4,6 +4,7 @@
 *
 */
 
+//trunck_template_style("page_home"); // Enqueues template specific stylesheet if using decoupled CSS files
 $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
