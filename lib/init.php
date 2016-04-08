@@ -176,4 +176,15 @@ function trunck_remove_admin_bar()
 }
 add_filter('show_admin_bar', 'trunck_remove_admin_bar'); // Remove Admin bar
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
+
+function trunck_hide_non_admin_areas() {
+    $user = wp_get_current_user();
+    if ( !in_array( 'administrator', (array) $user->roles ) ) {
+        // Remove ACF menu item
+       remove_menu_page( "edit.php?post_type=acf-field-group" );
+       remove_menu_page( "cptui_main_menu" );
+    }
+    
+}
+add_action( 'admin_menu', 'trunck_hide_non_admin_areas', 999 );
 ?>

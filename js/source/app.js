@@ -1,6 +1,6 @@
 // app.js
 
-(function () {
+(function ($) {
    'use strict';
 
 	$(document).foundation();
@@ -35,4 +35,4 @@
 		Trunck.init();
 	});
    
-}());
+}(jQuery));
