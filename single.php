@@ -10,7 +10,7 @@
  */
 
 $context = Timber::get_context();
-$post = Timber::query_post();
+$post = new TrunckPost();
 $context['post'] = $post;
 $context['comment_form'] = TimberHelper::get_comment_form();
 

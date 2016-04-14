@@ -55,6 +55,17 @@ else
      return;
 }
 
+class TrunckPost extends TimberPost {
+
+    public function the_content() {
+        while ( have_posts() ) : the_post();
+            the_content(); 
+        endwhile;
+    }
+}
+
+
+
 function trunck_esc_attr ($text) {
 
     return esc_attr($text);
