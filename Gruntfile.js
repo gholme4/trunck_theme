@@ -11,53 +11,63 @@ module.exports = function(grunt) {
 				sourceMap: false
 			},
 			// Global CSS file - production
-			globalScreenProd: {
+			globalProd: {
 				options: {
 					outputStyle: 'compressed',
 					sourceComments: false
 				},
 				files: {
-					'css/global.screen.min.css': 'scss/global.scss',
+					'css/global.min.css': 'scss/global.scss',
 				}
 			},
 			// Global CSS file - development
-			globalScreenDev: {
+			globalDev: {
 				options: {
 					outputStyle: 'expanded',
 					sourceComments: true
 				},
 				files: {
-					'css/global.screen.css': 'scss/global.scss',
+					'css/global.css': 'scss/global.scss',
 				}
 			},
 			// Main CSS file - production
-			screenProd: {
+			allProd: {
 				options: {
 					outputStyle: 'compressed',
 					sourceComments: false
 				},
 				files: {
-					'css/screen.min.css': 'scss/app.scss',
+					'css/all.min.css': 'scss/app.scss',
 				}
 			},
 			// Main CSS file - development
-			screenDev: {
+			allDev: {
 				options: {
 					outputStyle: 'expanded',
 					sourceComments: true
 				},
 				files: {
-					'css/screen.css': 'scss/app.scss',
+					'css/all.css': 'scss/app.scss',
 				}
 			},
-			// Print styles
-			print: {
+			// Print styles - production
+			printProd: {
 				options: {
 					outputStyle: 'compressed',
 					sourceComments: false
 				},
 				files: {
 					'css/print.min.css': 'scss/print.scss',
+				}
+			},
+			// Print styles - development
+			printDev: {
+				options: {
+					outputStyle: 'expanded',
+					sourceComments: true
+				},
+				files: {
+					'css/print.css': 'scss/print.scss',
 				}
 			},
 			// Template CSS files - production

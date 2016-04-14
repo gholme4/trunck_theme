@@ -8,11 +8,11 @@ function trunck_css() {
 	// Enqueue the main Stylesheet.
 	if (ENVIRONMENT == "development")
 	{
-		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/screen.css', array(), $version, "screen" );
+		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/all.css', array(), $version, "screen" );
 	}
 	else
 	{
-		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/screen.min.css', array(), $version, "screen" );
+		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/all.min.css', array(), $version, "screen" );
 	}
 
 	wp_enqueue_style( 'trunck-print-stylesheet', get_stylesheet_directory_uri() . '/css/print.min.css', array(), $version, "print" );
@@ -28,12 +28,12 @@ function trunck_modular_css() {
 	// Enqueue the main Stylesheet.
 	if (ENVIRONMENT == "development")
 	{
-		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/global.screen.css', array(), $version, "screen" );
+		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/global.css', array(), $version, "screen" );
 		error_log("page slug: " . get_page_template_slug());
 	}
 	else
 	{
-		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/global.screen.min.css', array(), $version, "screen" );
+		wp_enqueue_style( 'trunck-main-stylesheet', get_stylesheet_directory_uri() . '/css/global.min.css', array(), $version, "screen" );
 	}
 
 	wp_enqueue_style( 'trunck-print-stylesheet', get_stylesheet_directory_uri() . '/css/print.min.css', array(), $version, "print" );
