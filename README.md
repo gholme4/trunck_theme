@@ -36,15 +36,15 @@ You can edit the Grunt configuration in ```/Gruntfile.js```.
 Templates are based on the Foundation responsive front-end framework. It is important to become familiar with the framework's components and conventions by browsing its [documentation](http://foundation.zurb.com/sites/docs/). 
 
 ## Styling
-Foundation's SASS components are imported in /scss/global.scss which is imported in /scss/app.scss, the source SCSS file.
+Foundation's SASS components are imported in ```/scss/global.scss``` which is imported in ```/scss/app.scss```, the source SASS file.
 
-SASS files that contain styling for general components that can be used throughout templates should be placed in /scss/components and imported in /scss/global.scss. SASS files that contain styling specific to page templates should be placed in /scss/templates and imported in /scss/app.scss. This allows developers to choose to link a stylesheet in their respective page templates while linking /css/global.css in every web page. Alternatively one can choose to use /css/all.css on every page which will include all CSS.
+SASS files that contain styling for general components that can be used throughout templates should be placed in ```/scss/components``` and imported in ```/scss/global.scss```. SASS files that contain styling specific to page templates should be placed in ```/scss/templates``` and imported in ```/scss/app.scss```. This allows developers to choose to link a stylesheet in their respective page templates while linking ```/css/global.css``` in every web page. Alternatively one can choose to use ```/css/all.css``` on every page which will include all CSS.
 
 Foundation's UI components are to serve as base styling and markup for templates. Further CSS customization is made by first modifying Foundation's SASS variable values. The file, ```/scss/_settings.scss``` contains, all variables exposed by Foundation used in the CSS build. You can refer to the [documentation](http://foundation.zurb.com/sites/docs/) for clarity on the impact of changing each value. At the bottom of each page there is a table explaining the purpose of these variables.
 
 Print specific styling is compiled from ```/scss/print.scss```.
 
-After Grunt compiles the SASS files, the following files are generated: ```/css/screen.css```, ```/css/screen.min.css```, ```/css/print.min.css```.
+After Grunt compiles the SASS files, minified versions of all stylesheets are created.
 ## JavaScript
 All JavaScript plugins and utilities packaged with Foundation are included in the Grunt Javascript build. To include custom JS files in the build, edit the concat task in ```/Gruntfile.js```. All custom JS files should be placed in ```/js/source```. The final build files will be ```/js/script.js``` and ```/js/script.min.js```.
 
