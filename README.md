@@ -36,9 +36,9 @@ You can edit the Grunt configuration in ```/Gruntfile.js```.
 Templates are based on the Foundation responsive front-end framework. It is important to become familiar with the framework's components and conventions by browsing its [documentation](http://foundation.zurb.com/sites/docs/). 
 
 ## Styling
-Foundation's SASS components are imported in ```/scss/app.scss``` which is the source SCSS file. Here you can include or exclude components based on your needs. Other auxiliary components are imported here as well. As you create custom SASS you should import the resulting files here.
+Foundation's SASS components are imported in /scss/global.scss which is imported in /scss/app.scss, the source SCSS file.
 
-SASS files that contain styling for general components that can be used throughout templates should be placed in ```/scss/components```. SASS files that contain styling specific to page templates should be placed in ```/scss/templates```. 
+SASS files that contain styling for general components that can be used throughout templates should be placed in /scss/components and imported in /scss/global.scss. SASS files that contain styling specific to page templates should be placed in /scss/templates and imported in /scss/app.scss. This allows developers to choose to link a stylesheet in their respective page templates while linking /css/global.css in every web page. Alternatively one can choose to use /css/all.css on every page which will include all CSS.
 
 Foundation's UI components are to serve as base styling and markup for templates. Further CSS customization is made by first modifying Foundation's SASS variable values. The file, ```/scss/_settings.scss``` contains, all variables exposed by Foundation used in the CSS build. You can refer to the [documentation](http://foundation.zurb.com/sites/docs/) for clarity on the impact of changing each value. At the bottom of each page there is a table explaining the purpose of these variables.
 
